@@ -2,7 +2,7 @@ import React from "react";
 
 function TileSetter() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>
         Tile Setting Services: Elevate Your Space with Expert Craftsmanship
       </h1>

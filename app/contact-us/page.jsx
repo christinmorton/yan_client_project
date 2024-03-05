@@ -2,7 +2,7 @@ import React from "react";
 
 function ContactUs() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h3>🏗️ Transforming Spaces with Expert Tile Setting Services</h3>
       <p>
         Are you looking to elevate the aesthetic appeal of your home or

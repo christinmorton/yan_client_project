@@ -1,8 +1,9 @@
+import Link from "next/link";
 import React from "react";
 
 function Services() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>Services</h1>
 
       <div>
@@ -12,7 +13,7 @@ function Services() {
           From intricate mosaic patterns to sleek, contemporary designs, Yan's
           portfolio showcases his versatility and commitment to craftsmanship.
         </p>
-        <button>learn more about Yan's tile setting services</button>
+        <Link href="/services/tile-setter">learn more about Yan's tile setting services</Link>
       </div>
     </main>
   );

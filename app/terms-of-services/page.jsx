@@ -2,7 +2,7 @@ import React from "react";
 
 function TermsOfService() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>Terms of Service</h1>
 
       <p>

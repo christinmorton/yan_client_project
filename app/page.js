@@ -2,8 +2,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      {/* Welcome to Yan's Tile Setting Services */}
+    <main className="grid grid-cols-3 gap-2">
+      {/* 
+        Welcome to Yan's Tile Setting Services 
+        | flex min-h-screen flex-col items-center justify-between p-24
+      */}
       
       <div>
         <h1>Welcome to Yan's Tile Setting Services</h1>

@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>About Us</h1>
       <h1>About Yan: Expert Tile Setter and Craftsman</h1>
 

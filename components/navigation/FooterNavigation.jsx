@@ -1,18 +1,17 @@
-import React from 'react'
+import Link from "next/link";
+import React from "react";
 
 function FooterNavigation() {
   return (
     <div>
-        <nav>
-            <ul>
-                <li><a href="/socials">Socials</a></li>
-                <li><a href="/contact-us">FAQs</a></li>
-                <li><a href="/privacy-policy">Privacy Policy</a></li>
-                <li><a href="/terms-of-service">Terms of Service</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <Link href="/socials">Socials</Link>
+        <Link href="/faqs">FAQs</Link>
+        <Link href="/privacy-policy">Privacy Policy</Link>
+        <Link href="/terms-of-services">Terms of Service</Link>
+      </nav>
     </div>
-  )
+  );
 }
 
-export default FooterNavigation
+export default FooterNavigation;

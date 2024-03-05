@@ -2,7 +2,7 @@ import React from 'react'
 
 function Socials() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
         <h1>Socials</h1>
 
         <div>

@@ -2,7 +2,7 @@ import React from 'react'
 
 function PrivacyPolicy() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>Privacy Policy</h1>
 
       <p>At Yan's Tile Setting Services, accessible from https://www.yanstiles.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Yan's Tile Setting Services and how we use it.</p>  

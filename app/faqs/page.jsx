@@ -2,7 +2,7 @@ import React from "react";
 
 function Faqs() {
   return (
-    <main>
+    <main className="grid grid-cols-3 gap-2">
       <h1>Frequently Asked Questions</h1>
       <h2>FAQ: Your Guide to Expert Tile Setting Services</h2>
 
@@ -27,7 +27,7 @@ function Faqs() {
         turn your vision into reality together.
       </p>
 
-      <div>
+      <div className="grid grid-cols-3 gap-2">
         <div>
           <h3>Q: How long has Yan been in the tile setting business?</h3>
           <p>
