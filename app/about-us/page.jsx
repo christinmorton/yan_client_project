@@ -2,11 +2,11 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <main className="grid grid-cols-3 gap-2">
-      <h1>About Us</h1>
-      <h1>About Yan: Expert Tile Setter and Craftsman</h1>
-
-      <div>
+    <main className="min-w-full">
+      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
+        <div className="col-start-2 col-end-4">
+        <h1>About Us</h1>
+        <h1>About Yan: Expert Tile Setter and Craftsman</h1>
         <h2>
           Hero Section: [Background Image: Yan at work, meticulously laying
           tiles]
@@ -24,9 +24,11 @@ function AboutUs() {
           With a passion for precision and an eye for detail, Yan specializes in
           transforming spaces through expert tile setting.
         </p>
+        </div>
       </div>
 
-      <div>
+      <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
+        <div className="col-start-2 col-end-4">
         Section 1:{" "}
         <h2>Yan's Journey Heading: From Ukraine to the USA: Yan's Story</h2>
         <p>
@@ -42,9 +44,11 @@ function AboutUs() {
           bringing a unique blend of international flair and American ingenuity
           to his tile setting projects.
         </p>
+        </div>
       </div>
 
-      <div>
+      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
+        <div className="col-start-2 col-end-4">
         Section 2:{" "}
         <h2>
           Craftsmanship and Expertise Heading: The Art of Tile Setting: Yan's
@@ -64,9 +68,12 @@ function AboutUs() {
           Yan approaches each project with meticulous attention to detail and a
           dedication to exceeding client expectations.
         </p>
+        </div>
+        
       </div>
 
-      <div>
+      <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
+        <div className="col-start-2 col-end-4">
         Section 3:{" "}
         <h2>Client Testimonials Heading: What Our Clients Say About Yan</h2>
         <p>
@@ -83,10 +90,13 @@ function AboutUs() {
           with Yan's expert tile setting services. Contact us today to discuss
           your project needs and schedule a consultation.
         </p>
+        </div>
+        
       </div>
 
-      <div>
-        <h3>Call to Action:</h3>
+      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
+        <div className="col-start-2 col-end-4">
+          <h3>Call to Action:</h3>
         <button>Contact Yan Today</button>
         <p>
           Ready to elevate your space with expert tile setting? Don't hesitate
@@ -95,6 +105,8 @@ function AboutUs() {
           bring your vision to life. Get in touch now to schedule your
           consultation.
         </p>
+        </div>
+        
       </div>
     </main>
   );

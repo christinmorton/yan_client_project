@@ -2,7 +2,9 @@ import React from "react";
 
 function TileSetter() {
   return (
-    <main className="grid grid-cols-3 gap-2">
+    <main className="min-w-full">
+      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
+      <div className="col-start-2 col-end-4 justify-center my-auto">
       <h1>
         Tile Setting Services: Elevate Your Space with Expert Craftsmanship
       </h1>
@@ -14,8 +16,12 @@ function TileSetter() {
         Craftsmanship and Impeccable Attention to Detail Call-to-Action Button:
         Request a Free Consultation
       </p>
+      </div>
+      </div>
+      
 
-      <div>
+      <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
+        <div className="col-start-2">
         <h2>
           The Importance of Professional Tile Setting Heading: Why Choose
           Professional Tile Setting?
@@ -34,13 +40,17 @@ function TileSetter() {
           Yan ensures peace of mind and stunning results that exceed your
           expectations.
         </p>
+        </div>
       </div>
 
-      <div>
+      <div className="min-w-full min-h-screen grid grid-cols-4 grid-rows-2 bg-slate-100">
+        <div className="col-start-2 col-end-4 p-12">
         <h2>
           Yan's Process: From Concept to Completion Heading: The Yan Difference:
           A Proven Process for Success
         </h2>
+        </div>
+        <div className="row-start-2 col-start-2">
         <p>
           Consultation: Yan begins by listening to your vision, discussing
           design ideas, and assessing the scope of your project to create a
@@ -61,13 +71,17 @@ function TileSetter() {
           edges, and performs quality checks to ensure a flawless finish that
           exceeds your expectations.
         </p>
+        </div>
       </div>
 
-      <div>
+      <div className="min-h-[250px] m-44 grid grid-cols-4 grid-rows-2 gap-6">
+        <div className="col-start-2 col-end-4">
         <h2>
           Why Choose Yan for Your Tile Setting Needs Heading: Experience the Yan
           Advantage
         </h2>
+        </div>
+        <div className="row-start-2 col-start-2 col-end-4">
         <p>
           Expertise: With over 20 years of experience in construction work and
           specialized training in tile setting, Yan brings unparalleled
@@ -88,15 +102,20 @@ function TileSetter() {
           punctuality, professionalism, and clear communication to ensure a
           seamless and stress-free experience for every client.
         </p>
+        </div>
       </div>
 
-      <div>
-        <h2>
+      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
+      <div className="col-start-2 col-end-4 p-12">
+      <h2>
           Our Portfolio [Image Gallery showcasing Yan's stunning tile setting
           projects] Heading: Explore Our Portfolio of Beautiful Tile
           Installations
         </h2>
-        <p>
+      </div>
+        
+        <div className="row-start-2 col-start-2 col-end-4">
+          <p>
           Browse through our gallery to see examples of Yan's exquisite tile
           setting work, including kitchens, bathrooms, floors, backsplashes, and
           more.
@@ -106,10 +125,15 @@ function TileSetter() {
           dedication to delivering superior craftsmanship that transforms
           ordinary spaces into extraordinary works of art.
         </p>
+        </div>
+        
       </div>
 
-      <div>
+      <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
+        <div className="col-start-2 col-end-4">
         <h2>Get Started Today</h2>
+        </div>
+        <div className="row-start-2 col-start-2 col-end-4">
         <h2>
           Ready to Transform Your Space with Expert Tile Setting? Call-to-Action
           Button: Schedule Your Free Consultation{" "}
@@ -121,6 +145,7 @@ function TileSetter() {
           possibilities for elevating your space with exquisite craftsmanship
           and attention to detail.
         </p>
+        </div>
       </div>
     </main>
   );
