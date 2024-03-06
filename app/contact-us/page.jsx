@@ -14,10 +14,10 @@ function ContactUs() {
             wealth of expertise to every project he undertakes.
           </p>
           <p>
-            Originally from Ukraine, Yan's journey in the United States has been
+            {`Originally from Ukraine, Yan's journey in the United States has been
             nothing short of remarkable. After honing his skills in the bustling
             streets of New York City for 11 years, he now calls the vibrant city
-            of Las Vegas his home.
+            of Las Vegas his home.`}
           </p>
         </div>
       </div>

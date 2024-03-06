@@ -10,11 +10,11 @@ function Services() {
 <div>
   <h2>Tile Setting Services</h2>
   <p>
-    Yan specializes in transforming spaces through expert tile setting.
+    {`Yan specializes in transforming spaces through expert tile setting.
     From intricate mosaic patterns to sleek, contemporary designs, Yan's
-    portfolio showcases his versatility and commitment to craftsmanship.
+    portfolio showcases his versatility and commitment to craftsmanship.`}
   </p>
-  <Link href="/services/tile-setter">learn more about Yan's tile setting services</Link>
+  <Link href="/services/tile-setter">{`learn more about Yan's tile setting services`}</Link>
 </div>
       </div>
       

@@ -8,11 +8,11 @@ function TermsOfService() {
           <h1>Terms of Service</h1>
 
           <p>
-            These Terms of Service ("Terms") govern your use of the tile setting
+            {`These Terms of Service ("Terms") govern your use of the tile setting
             services provided by Yan, an independent contractor operating in the
             Las Vegas City area ("Yan," "we," or "us"). By using Yan's tile
             setting services, you agree to be bound by these Terms. If you do
-            not agree to these Terms, please refrain from using our services.
+            not agree to these Terms, please refrain from using our services.`}
           </p>
         </div>
       </div>
@@ -59,10 +59,10 @@ function TermsOfService() {
         <div>
           <h3>5. Materials and Warranty</h3>
           <p>
-            Yan will use high-quality materials for your tile installation. Any
+           {`Yan will use high-quality materials for your tile installation. Any
             warranties provided by manufacturers for materials used will be
             passed on to you. Yan guarantees our workmanship for a period of
-            [insert duration] from the completion date.
+            [insert duration] from the completion date.`}
           </p>
         </div>
 
@@ -114,13 +114,13 @@ function TermsOfService() {
       <div className="col-start-3 col-end-5 my-auto p-24">
         <h4>Contact Information</h4>
         <p>
-          If you have any questions or concerns about these Terms, please
-          contact us at [insert contact information].
+          {`If you have any questions or concerns about these Terms, please
+          contact us at [insert contact information].`}
         </p>
         <p>
-        By using Yan's tile setting services, you consent to be bound by these
+       {`By using Yan's tile setting services, you consent to be bound by these
         Terms of Service. Thank you for choosing Yan for your tile installation
-        needs.
+        needs.`}
       </p>
       </div>
 

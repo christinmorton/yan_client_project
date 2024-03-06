@@ -10,11 +10,11 @@ function TileSetter() {
       </h1>
 
       <p>
-        Hero Section: [Background Image: A stunning tiled space showcasing Yan's
+        {`Hero Section: [Background Image: A stunning tiled space showcasing Yan's
         work] Heading: Transform Your Vision into Reality with Yan's Tile
         Setting Services Subheading: Experience the Difference of Expert
         Craftsmanship and Impeccable Attention to Detail Call-to-Action Button:
-        Request a Free Consultation
+        Request a Free Consultation`}
       </p>
       </div>
       </div>
@@ -46,8 +46,8 @@ function TileSetter() {
       <div className="min-w-full min-h-screen grid grid-cols-4 grid-rows-2 bg-slate-100">
         <div className="col-start-2 col-end-4 p-12">
         <h2>
-          Yan's Process: From Concept to Completion Heading: The Yan Difference:
-          A Proven Process for Success
+          {`Yan's Process: From Concept to Completion Heading: The Yan Difference:
+          A Proven Process for Success`}
         </h2>
         </div>
         <div className="row-start-2 col-start-2">
@@ -88,9 +88,9 @@ function TileSetter() {
           expertise to every project.
         </p>
         <p>
-          Craftsmanship: Yan's commitment to quality craftsmanship shines
+          {`Craftsmanship: Yan's commitment to quality craftsmanship shines
           through in every tile he sets, delivering results that are as
-          beautiful as they are durable.
+          beautiful as they are durable.`}
         </p>
         <p>
           Customization: Whether you prefer classic elegance or modern
@@ -108,22 +108,22 @@ function TileSetter() {
       <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
       <div className="col-start-2 col-end-4 p-12">
       <h2>
-          Our Portfolio [Image Gallery showcasing Yan's stunning tile setting
+          {`Our Portfolio [Image Gallery showcasing Yan's stunning tile setting
           projects] Heading: Explore Our Portfolio of Beautiful Tile
-          Installations
+          Installations`}
         </h2>
       </div>
         
         <div className="row-start-2 col-start-2 col-end-4">
           <p>
-          Browse through our gallery to see examples of Yan's exquisite tile
+          {`Browse through our gallery to see examples of Yan's exquisite tile
           setting work, including kitchens, bathrooms, floors, backsplashes, and
-          more.
+          more.`}
         </p>
         <p>
-          Each project showcases Yan's attention to detail, creativity, and
+         {`Each project showcases Yan's attention to detail, creativity, and
           dedication to delivering superior craftsmanship that transforms
-          ordinary spaces into extraordinary works of art.
+          ordinary spaces into extraordinary works of art.`}
         </p>
         </div>
         
@@ -139,11 +139,11 @@ function TileSetter() {
           Button: Schedule Your Free Consultation{" "}
         </h2>
         <p>
-          Take the first step towards enhancing the beauty and value of your
+          {`Take the first step towards enhancing the beauty and value of your
           home or business with Yan's expert tile setting services. Contact us
           today to schedule your free consultation and discover the endless
           possibilities for elevating your space with exquisite craftsmanship
-          and attention to detail.
+          and attention to detail.`}
         </p>
         </div>
       </div>

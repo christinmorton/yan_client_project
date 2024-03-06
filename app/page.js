@@ -11,13 +11,13 @@ import {
 
 import HomepageContactForm from "@/components/forms/HomepageContactForm";
 
-import yanProfilePic from "./images/cropped_profile_yan.png";
-import projectPic1 from "./images/Resized_Resized_20231109_125211_223389226286137.JPEG";
-import projectPic2 from "./images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-import projectPic3 from "./images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
-import projectPic4 from "./images/stock/pexels-jean-van-der-meulen-1457847.jpg";
-import projectPic5 from "./images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-import headerPic from "./images/stock/maksim-shutov-o6VYbMug0JU-unsplash.jpg";
+import yanProfilePic from "../public/images/cropped_profile_yan.png";
+import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
+import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
+import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
+import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
+import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
+import headerPic from "../public/images/stock/maksim-shutov-o6VYbMug0JU-unsplash.jpg";
 
 import { CircleUserRound } from "lucide-react";
 
@@ -43,7 +43,7 @@ export default function Home() {
         className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100 bg-cover bg-center bg-no-repeat bg-fixed"
       >
         <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white">
-          <h1>Welcome to Yan's Tile Setting Services</h1>
+          <h1>{`Welcome to Yan's Tile Setting Services`}</h1>
           <h2>Elevate Your Space with Expert Tile Setting</h2>
           <p>Transforming Homes and Businesses with Exquisite Craftsmanship </p>
           <button>Get a Free Quote</button>
@@ -65,13 +65,13 @@ export default function Home() {
 
           <h3>Meet Yan: Your Trusted Tile Setting Specialist</h3>
           <p>
-            With over 20 years of experience in the construction industry, Yan
+            {`With over 20 years of experience in the construction industry, Yan
             has perfected the art of tile setting. Originally from Ukraine, Yan
             brings a blend of Old World craftsmanship and modern techniques to
             every project. Having honed his skills in New York City for 11 years
             before relocating to the vibrant city of Las Vegas, Yan is
             passionate about delivering exceptional results that exceed
-            expectations.
+            expectations.`}
           </p>
         </div>
       </div>
@@ -82,13 +82,13 @@ export default function Home() {
           <p>[Image collage showcasing various tile setting projects] </p>
           <h2>Expert Tile Setting Services Tailored to Your Needs </h2>
           <p>
-            From residential renovations to commercial installations, Yan offers
+            {`From residential renovations to commercial installations, Yan offers
             a comprehensive range of tile setting services to suit every project
             requirement. Whether you're looking to refresh your kitchen
             backsplash, upgrade your bathroom flooring, or create a striking
             feature wall, Yan combines precision, creativity, and attention to
             detail to bring your vision to life. Contact us today to explore our
-            full range of services.
+            full range of services.`}
           </p>
         </div>
 
@@ -138,14 +138,14 @@ export default function Home() {
           </div>
           <div>
             <p>
-              Take a virtual tour of some of our recent tile setting projects
+              {`Take a virtual tour of some of our recent tile setting projects
               and gain inspiration for your own space. From classic designs to
               contemporary concepts, our portfolio showcases the versatility and
               quality of our workmanship. Browse through our gallery and
               envision the possibilities for transforming your home or business
-              with Yan's expert tile setting services.
+              with Yan's expert tile setting services.`}
             </p>
-            <p>[Slideshow showcasing Yan's past tile setting projects] </p>
+            <p>{`[Slideshow showcasing Yan's past tile setting projects]`} </p>
           </div>
         </div>
         <div className="col-start-1 col-end-2 row-start-2">
@@ -180,12 +180,12 @@ export default function Home() {
           <h2>Hear From Our Satisfied Clients </h2>
           <div>
             <p>
-              Don't just take our word for it—discover what our satisfied
+              {`Don't just take our word for it—discover what our satisfied
               clients have to say about their experience working with Yan. From
               prompt communication to flawless execution, our dedication to
               customer satisfaction shines through in every testimonial. Read
               firsthand accounts of our exceptional service and craftsmanship
-              and join the ranks of our delighted customers.
+              and join the ranks of our delighted customers.`}
             </p>
             <p>[Carousel of customer testimonials with accompanying images] </p>
           </div>
@@ -221,11 +221,11 @@ export default function Home() {
           <h2>Contact Us</h2>
           <h3>Get in Touch </h3>
           <p>
-            Ready to transform your space with expert tile setting? Reach out to
+            {`Ready to transform your space with expert tile setting? Reach out to
             Yan today to discuss your project requirements and schedule a
             consultation. Whether you have questions about our services or are
             ready to get started, we're here to help. Fill out the form below,
-            and one of our team members will be in touch with you shortly.
+            and one of our team members will be in touch with you shortly.`}
           </p>
         </div>
 

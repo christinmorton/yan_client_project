@@ -8,26 +8,26 @@ function PrivacyPolicy() {
           <h1>Privacy Policy</h1>
 
           <p>
-            At Yan's Tile Setting Services, accessible from
+            {`At Yan's Tile Setting Services, accessible from
             https://www.yanstiles.com, one of our main priorities is the privacy
             of our visitors. This Privacy Policy document contains types of
             information that is collected and recorded by Yan's Tile Setting
-            Services and how we use it.
+            Services and how we use it.`}
           </p>
 
           <p>
-            Yan ("Yan," "we," or "us") respects your privacy and is committed to
+            {`Yan ("Yan," "we," or "us") respects your privacy and is committed to
             protecting your personal information. This Privacy Policy outlines
             how we collect, use, disclose, and safeguard your information when
-            you use our tile setting services in the Las Vegas City area.
+            you use our tile setting services in the Las Vegas City area.`}
           </p>
 
           <p>
-            We may update this Privacy Policy from time to time. We will notify
+            {`We may update this Privacy Policy from time to time. We will notify
             you of any changes by posting the new Privacy Policy on this page.
             You are advised to review this Privacy Policy periodically for any
             changes. Changes to this Privacy Policy are effective when they are
-            posted on this page.
+            posted on this page.`}
           </p>
         </div>
       </div>
@@ -125,11 +125,11 @@ function PrivacyPolicy() {
         <div>
           <h3>8. Contact Us</h3>
           <p>
-            If you have any questions or concerns about this Privacy Policy or
+            {`If you have any questions or concerns about this Privacy Policy or
             our privacy practices, please contact us at [insert contact
             information]. By using Yan's tile setting services, you consent to
             the collection and use of your information as outlined in this
-            Privacy Policy. Thank you for trusting Yan with your privacy.
+            Privacy Policy. Thank you for trusting Yan with your privacy.`}
           </p>
         </div>
       </div>
