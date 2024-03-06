@@ -11,13 +11,13 @@ import {
 
 import HomepageContactForm from "@/components/forms/HomepageContactForm";
 
-import yanProfilePic from "../public/images/cropped_profile_yan.png";
-import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
-import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
-import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
-import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-import headerPic from "../public/images/stock/maksim-shutov-o6VYbMug0JU-unsplash.jpg";
+import yanProfilePic from "./images/cropped_profile_yan.png";
+import projectPic1 from "./images/Resized_Resized_20231109_125211_223389226286137.JPEG";
+import projectPic2 from "./images/Resized_Resized_20230815_102145_223622606178443.JPEG";
+import projectPic3 from "./images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
+import projectPic4 from "./images/stock/pexels-jean-van-der-meulen-1457847.jpg";
+import projectPic5 from "./images/Resized_Resized_20231204_161849_223463781147931.JPEG";
+import headerPic from "./images/stock/maksim-shutov-o6VYbMug0JU-unsplash.jpg";
 
 import { CircleUserRound } from "lucide-react";
 
