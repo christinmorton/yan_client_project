@@ -8,7 +8,12 @@ module.exports = {
     "./src/**/*.{js,jsx}",
   ],
   prefix: "",
+  darkMode: "class",
   theme: {
+    screens: {
+      xxs: "325px",
+      xs: "540px",
+    },
     container: {
       center: true,
       padding: "2rem",
@@ -17,6 +22,20 @@ module.exports = {
       },
     },
     extend: {
+      fontSize: {
+        // Fluid typography scale based on viewport width
+        '2xs': ['calc(0.5rem + 0.25vw)', '.5rem'],
+        'xs': ['calc(0.75rem + 0.5vw)', '1rem'],
+        'sm': ['calc(0.875rem + 0.5vw)', '1.25rem'],
+        'base': ['calc(1rem + 0.5vw)', '1.5rem'],
+        'lg': ['calc(1.125rem + 0.5vw)', '1.75rem'],
+        'xl': ['calc(1.25rem + 0.5vw)', '2rem'],
+        '2xl': ['calc(1.5rem + 0.5vw)', '2.25rem'],
+        '3xl': ['calc(1.875rem + 0.5vw)', '2.75rem'],
+        '4xl': ['calc(2.25rem + 0.5vw)', '3rem'],
+        '5xl': ['calc(3rem + 0.5vw)', '4rem'],
+        '6xl': ['calc(3.75rem + 0.5vw)', '5rem'],
+      },
       colors: {
         "picton-blue": {
           50: "#f1f8fe",
