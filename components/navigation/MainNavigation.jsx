@@ -18,7 +18,8 @@ function MainNavigation() {
       <nav className="flex justify-between items-center w-[92%] mx-auto">
         <div className="">
           <Link href="/">
-            <span>Yan | Tile Setter</span>
+            {/* <span>Yan | Tile Setter</span> */}
+            <img src={logoTextMark} alt="" />
           </Link>
         </div>
         <div className="md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center">
