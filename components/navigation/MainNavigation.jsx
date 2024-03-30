@@ -5,6 +5,8 @@ import React from "react";
 import { Button } from "../ui/button";
 import { MenuSquare } from "lucide-react";
 
+import logoTextMark from '../../public/images/yans_logo/Yans Tiles Logo word mark black.svg';
+
 function MainNavigation() {
 
   const onToggleMenu = (e) => () => {
