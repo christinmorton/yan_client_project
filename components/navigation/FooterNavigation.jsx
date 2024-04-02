@@ -9,6 +9,7 @@ function FooterNavigation() {
         <Link href="/faqs">FAQs</Link>
         <Link href="/privacy-policy">Privacy Policy</Link>
         <Link href="/terms-of-services">Terms of Service</Link>
+        <Link href="/contact-us" className="tracking-widest">Contact Us</Link>
       </nav>
     </div>
   );

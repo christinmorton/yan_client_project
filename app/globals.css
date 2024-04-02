@@ -10,6 +10,15 @@
   }
 }
  
+@media screen(lg) {
+  .bg-hero {
+    width: 2000px;
+    height: 350px;
+    left: 30%;
+    @apply absolute rounded-l-full top-52 bg-picton-blue-dark-400;
+  }
+}
+
 /* @layer base {
   * {
     @apply border-border;

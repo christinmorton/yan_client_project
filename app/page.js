@@ -17,7 +17,12 @@ import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622
 import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
 import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
 import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-import headerPic from "../public/images/stock/maksim-shutov-o6VYbMug0JU-unsplash.jpg";
+import projectPic6 from '../public/images/Resized_Resized_20240306_165443.JPEG'
+import headerPic from "../public/images/stock/pexels-luis-yanez-206172.jpg";
+import bathroom from "../public/images/svg_assets/bathroom-svgrepo-com.png";
+import kitchen from "../public/images/svg_assets/kitchen-room-svgrepo-com.png";
+import residential from "../public/images/svg_assets/house-svgrepo-com.png";
+import commerical from "../public/images/svg_assets/residential-svgrepo-com.png";
 
 import { CircleUserRound } from "lucide-react";
 
@@ -28,150 +33,225 @@ export default function Home() {
 
   return (
     <main className="min-w-full">
-      {/* 
-        Welcome to Yan's Tile Setting Services 
-        | flex min-h-screen flex-col items-center justify-between p-24
-        | sm:grid-cols-2 md:grid-cols-3 gap-2
-        | min-h-screen content-center justify-center grid grid-custom gap-6
-      */}
-      {/*  */}
-      <div
-        style={{
-          backgroundImage: `url('./images/stock/pexels-luis-yanez-206172.jpg')`,
-          // height: "972px",
-        }}
-        className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100 bg-cover bg-center bg-no-repeat bg-fixed"
-      >
-        <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white">
-          <h1 className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl font-bold mb-4">Welcome to Yan's Tile Setting Services</h1>
-          <h2 className="text-2xl sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold mb-4">Elevate Your Space with Expert Tile Setting</h2>
-          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">Transforming Homes and Businesses with Exquisite Craftsmanship </p>
-          <button className="bg-blue-500 text-white px-4 py-2 rounded-md">Get a Free Quote</button>
-        </div>
-      </div>
+      <section id="hero">
+        <div className="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+          {/* Content */}
+          <div className="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
+            <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+              Welcome to <br className="hidden lg:visible" /> Yan's Tiles
+            </h1>
+            <h2 className="max-w-md mx-auto text-sm text-center text-gray-400 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
+              Elevate Your Space with Expert Tile Setting
+            </h2>
+            <p className="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">
+              Transforming Homes and Businesses with Exquisite Craftsmanship{" "}
+            </p>
 
-      <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
-        <div className="col-start-2 col-end-3">
+            <div className="flex items-center justify-center w-full space-x-4 lg:justify-start">
+              <button className="bg-picton-blue-400 text-white px-4 py-4 rounded shadow-md border border-picton-blue-400 md:text-base hover:bg-white hover:text-picton-blue-300">
+                Get a Free Quote
+              </button>
+            </div>
+          </div>
+
+          <div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div className="bg-hero"></div>
+            <Image
+              src={headerPic}
+              alt="A stunning tiled space showcasing Yan's work"
+              className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+            />
+          </div>
+        </div>
+
+        <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div>
+      </section>
+
+      <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row">
+        <div className="w-1/2 flex m-8 items-center justify-end ">
           <Image
-            className="w-full min-h-full"
+            className=""
             src={yanProfilePic}
             alt="A stunning tiled space showcasing Yan's work"
-            // width={400}
-            // height={400}
+            width={400}
+            height={400}
           />
         </div>
-        <div className="col-start-3 col-end-5 p-5 mx-auto my-auto">
+        <div className="w-1/2 flex flex-col justify-between gap-4 text-left m-8">
           {/* <h2 className="">About Yan</h2> */}
-          <h3 className="text-3xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl font-bold mb-4">Meet Yan: Your Trusted Tile Setting Specialist</h3>
-          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
+          <h3 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
+            Meet Yan:
+          </h3>
+          <h4 className="text-lg font-semi-bold text-center lg:text-xl lg:text-left text-picton-blue-200">
+            Your Trusted Tile Setting Specialist
+          </h4>
+          <p className="max-w-md mx-auto text-sm text-center text-white lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
             With over 20 years of experience in the construction industry, Yan
-            has perfected the art of tile setting. Yan is
-            passionate about delivering exceptional results that exceed
-            expectations.
+            has perfected the art of tile setting. Yan is passionate about
+            delivering exceptional results that exceed expectations.
           </p>
         </div>
-      </div>
+      </section>
 
-      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100 gap-4">
-        <div className="col-start-2 col-end-4 row-start-1 row-end-2 p-6">
-          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">Our Services</h2>
-          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">Image collage showcasing various tile setting projects</p>
-          <h2>Expert Tile Setting Services Tailored to Your Needs </h2>
-          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
-            From residential renovations to commercial installations, Yan offers
-            a comprehensive range of tile setting services to suit every project
-            requirement. Whether you're looking to refresh your kitchen
-            backsplash, upgrade your bathroom flooring, or create a striking
-            feature wall, Yan combines precision, creativity, and attention to
-            detail to bring your vision to life. Contact us today to explore our
-            full range of services.
-          </p>
+      <section className="min-w-full min-h-screen py-6 bg-slate-100 ">
+        {/* section title */}
+        <div className="flex flex-row items-center justify-center lg:justify-end pt-4">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-right lg:mr-28 text-picton-blue-600">
+            Our Services
+          </h2>
         </div>
 
-        {/* <div className="col-start-1 col-end-5 row-start-2 row-end-3"> */}
-        <div className="col-start-1 col-end-2 row-start-2">
-          <Image
-            src={projectPic1}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={600}
-          />
-        </div>
+        <div className="flex flex-col gap-4 lg:flex-row">
+          <div className="w-full min-h-[300px] flex flex-col items-center justify-evenly lg:flex-row gap-4">
+            <div className="flex flex-wrap items-center justify-center lg:flex-col lg:justify-evenly">
+              <div className="card relative group w-[50%] lg:w-auto lg:flex-1">
+                <Image
+                  src={bathroom}
+                  alt="bathroom tile icon"
+                  className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-picton-blue-400 opacity-100 bg-opacity-80">
+                  <div className="flex justify-between w-full">
+                    <div className="font-normal">
+                      <p className="text-sm">Bathroom Tile</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div className="col-start-2 col-end-4 row-start-2">
-          <Image
-            src={projectPic2}
-            alt="A stunning tiled space showcasing Yan's work"
-            
-          />
-        </div>
+              <div className="card relative group w-[50%] lg:w-auto lg:flex-1">
+                <Image
+                  src={kitchen}
+                  alt="kitchen tile icon"
+                  className="w-[200px] h-[200px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-picton-blue-400 opacity-100 bg-opacity-80">
+                  <div className="flex justify-between w-full">
+                    <div className="font-normal">
+                      <p className="text-sm">Kitchen Tile</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        {/* <div className="col-start-3 col-end-4 row-start-2">
-          <Image
-            src={projectPic3}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={400}
-          />
-        </div> */}
+              <div className="card relative group w-[50%] lg:w-auto lg:flex-1">
+                <Image
+                  src={residential}
+                  alt="residential tile icon"
+                  className="w-[200px] h-[200px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-picton-blue-400 opacity-100 bg-opacity-80">
+                  <div className="flex justify-between w-full">
+                    <div className="font-normal">
+                      <p className="text-sm">Residential</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-        <div className="col-start-4 col-end-5 row-start-2">
-          <Image
-            src={projectPic4}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={400}
-          />
-        </div>
-        {/* </div> */}
-      </div>
-
-      <div className="min-h-[250px] m-44 grid grid-cols-4 grid-rows-2">
-        <div className="row-start-1 col-start-2 col-end-4">
-          <div>
-            <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">Portfolio </h2>
-            <h2>Explore Our Portfolio </h2>
+              <div className="card relative group w-[50%] lg:w-auto lg:flex-1">
+                <Image
+                  src={commerical}
+                  alt="commercial tile icon"
+                  className="w-[200px] h-[200px]"
+                />
+                <div className="absolute bottom-0 left-0 right-0 p-2 px-4 text-white duration-500 bg-picton-blue-400 opacity-100 bg-opacity-80">
+                  <div className="flex justify-between w-full">
+                    <div className="font-normal">
+                      <p className="text-sm">Commercial</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div>
-            <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
-              Take a virtual tour of some of our recent tile setting projects
-              and gain inspiration for your own space. From classic designs to
-              contemporary concepts, our portfolio showcases the versatility and
-              quality of our workmanship. Browse through our gallery and
-              envision the possibilities for transforming your home or business
-              with Yan's expert tile setting services.
+
+          <div className="w-full flex flex-col items-center lg:items-end justify-center my-8 mr-28 gap-y-4">
+            <h2 className="text-lg font-semi-bold text-center lg:text-xl lg:text-right text-grayishBlue">
+              Expert Tile Setting Services
+            </h2>
+            <h4 className="text-md font-extralight text-right lg:text-lg lg:text-right text-grayishBlue">Tailored to Your Needs</h4>
+            <p className="max-w-md mx-auto text-sm text-right text-picton-blue-600 mb-12 lg:text-md lg:mt-0 lg:mx-0">
+              From residential renovations to commercial installations, Yan offers a comprehensive range of tile setting services to suit every project requirement. Whether you're looking to refresh your kitchen backsplash, upgrade your bathroom flooring, or create a striking feature wall. Yan combines precision, creativity, and attention to detail to bring your vision to life. Contact us today to explore our full range of services.
             </p>
           </div>
         </div>
-        <div className="col-start-1 col-end-2 row-start-2">
-          <Image
-            src={projectPic1}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={400}
-          />
-        </div>
-        <div className="col-start-2 col-end-4 row-start-2 mx-auto my-auto">
-          <Image
-            src={projectPic2}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={400}
-          />
-        </div>
-        <div className="col-start-4 col-end-5 row-start-2">
-          <Image
-            src={projectPic5}
-            alt="A stunning tiled space showcasing Yan's work"
-            width={400}
-            height={400}
-          />
-        </div>
-      </div>
 
-      <div className="min-w-full grid grid-cols-7 grid-rows-auto bg-slate-100">
-        <div className="row-start-1 col-start-3 col-end-6 p-12">
-          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">Testimonials</h2>
+      </section>
+
+      <section className="min-h-[250px] flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-y-12 p-44 bg-picton-blue-400 ">
+        <div className="lg:row-start-1 lg:row-end-1 lg:col-start-1 lg:col-end-3 lg:place-content-end">
+            <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
+              Portfolio
+            </h2>
+        </div>
+
+        <div className="lg:row-start-2 lg:col-start-1 lg:col-end-3">
+          <h2 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-picton-blue-200">Explore Our Portfolio </h2>
+          <p className="max-w-md mx-auto text-sm text-center mb-4 text-white lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
+            Take a virtual tour of some of our recent tile setting projects
+            and gain inspiration for your own space. From classic designs to
+            contemporary concepts, our portfolio showcases the versatility and
+            quality of our workmanship. Browse through our gallery and
+            envision the possibilities for transforming your home or business
+            with Yan's expert tile setting services.
+          </p>
+        </div>
+
+        <div className="lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5">
+          <div className="w-full h-full flex flex-col lg:flex-row">
+            <div className="col-start-1 col-end-2 row-start-2">
+              <Image
+                src={projectPic1}
+                alt="A stunning tiled space showcasing Yan's work"
+                // width={400}
+                // height={400}
+              />
+            </div>
+
+            <div className="col-start-2 col-end-4 row-start-2">
+              <Image
+                src={projectPic2}
+                alt="A stunning tiled space showcasing Yan's work"
+                // width={400}
+                // height={600}
+              />
+            </div>
+
+            <div className="col-start-4 col-end-5 row-start-2">
+              <Image
+                src={projectPic4}
+                alt="A stunning tiled space showcasing Yan's work"
+                // width={400}
+                // height={400}
+              />
+            </div>
+            <div className="col-start-4 col-end-5 row-start-2">
+              <Image
+                src={projectPic5}
+                alt="A stunning tiled space showcasing Yan's work"
+                // width={400}
+                // height={400}
+              />
+            </div>
+            <div className="col-start-4 col-end-5 row-start-2">
+              <Image
+                src={projectPic6}
+                alt="A stunning tiled space showcasing Yan's work"
+                // width={400}
+                // height={400}
+              />
+            </div>
+          </div>
+        </div>
+      
+      </section>
+
+      <section className="min-w-full  bg-slate-100">
+        <div className="p-12">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+            Testimonials
+          </h2>
           <h2>Hear From Our Satisfied Clients </h2>
           <div>
             <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
@@ -185,7 +265,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="row-start-2 col-start-2 col-end-7 grid grid-cols-5 grid-rows-auto gap-6">
+        <div className="gap-6">
           {testimonials.map((testimonial) => (
             <Card key={testimonial.id}>
               <CardHeader>
@@ -208,11 +288,13 @@ export default function Home() {
             </Card>
           ))}
         </div>
-      </div>
+      </section>
 
-      <div className="min-h-[250px] m-44 grid grid-cols-4 grid-rows-auto justify-items-center">
-        <div className="row-start-1 col-start-2 col-end-4 p-6">
-          <h2 className="text-4xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold mb-4">Contact Us</h2>
+      <div className="min-h-[250px] m-44 ">
+        <div className="p-6">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+            Contact Us
+          </h2>
           <h3>Get in Touch </h3>
           <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
             Ready to transform your space with expert tile setting? Reach out to
@@ -223,7 +305,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=" w-full row-start-2 col-start-2 col-end-4 p-6 bg-slate-600">
+        <div className=" w-full p-6 bg-slate-600">
           <HomepageContactForm />
         </div>
       </div>

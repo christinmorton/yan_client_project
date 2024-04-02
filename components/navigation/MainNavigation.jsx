@@ -1,11 +1,13 @@
 'use client';
 
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
 import { MenuSquare } from "lucide-react";
 
-import logoTextMark from '../../public/images/yans_logo/Yans Tiles Logo word mark black.svg';
+// import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
+import logoTextMark from '../../public/images/yans_logo/Yans_Tiles_Logo_word_mark_black.png';
 
 function MainNavigation() {
 
@@ -14,29 +16,32 @@ function MainNavigation() {
   }
 
   return (
-    <header className="bg-white">
-      <nav className="flex justify-between items-center w-[92%] mx-auto">
-        <div className="">
+    <header>
+      <nav className="flex items-center justify-between space-x-20 m-6">
+        <div className="z-30">
           <Link href="/">
             {/* <span>Yan | Tile Setter</span> */}
-            <img src={logoTextMark} alt="" />
+            <Image src={logoTextMark} alt="logo mark of Yan's Tiles" id="logo" className="logo w-36 h-28" />
           </Link>
         </div>
-        <div className="md:static md:min-h-fit absolute bg-white min-h-[60vh] left-0 top-[-100%] md:w-auto w-full flex items-center">
-          <div className="flex md:flex-row flex-col md:items-center md:gap-[4vw] gap-12">
-            <Link href="/services/tile-setter" className="hover:text-gray-500" >Services</Link>
-            <Link href="/projects" className="hover:text-gray-500">Projects</Link>
-            <Link href="/about-us" className="hover:text-gray-500">About Us</Link>
-            <Link href="/contact-us" className="hover:text-gray-500">Contact Us</Link>
-          </div>
+
+        {/* Menu Items */}
+        <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
+          <Link href="/services/tile-setter"><span className="tracking-widest hover:text-picton-blue-400"> Services</span></Link>
+          <Link href="/projects" className="tracking-widest hover:text-picton-blue-400">Projects</Link>
+          <Link href="/about-us" className="tracking-widest hover:text-picton-blue-400">About</Link>
+          <button className="px-8 py-2 text-white bg-picton-blue-400 border-2 border-picton-blue-300 rounded-lg shadow-md hover:text-picton-blue-300 hover:bg-white">Contact</button>
+          {/* <Link href="/contact-us" className="tracking-widest hover:text-softRed">Contact Us</Link> */}
         </div>
+
+
 
         
 
-        <div className="flex items-center gap-6">
+        {/* <div className="flex items-center gap-6">
           <Button className="bg-[#a6c1ee] text-white px-5 py-2 rounded-full hover:bg-[#87acec]">Get a Quote</Button>
           <MenuSquare onClick={(e) => onToggleMenu(e)} className="text-3xl cursor-pointer md:hidden" />
-        </div>
+        </div> */}
       </nav>
     </header>
   );
