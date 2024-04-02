@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 
 import HomepageContactForm from "@/components/forms/HomepageContactForm";
+import Carousel from "@/components/Carousel";
 
 import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
 import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
@@ -24,9 +25,9 @@ import kitchen from "../public/images/svg_assets/kitchen-room-svgrepo-com.png";
 import residential from "../public/images/svg_assets/house-svgrepo-com.png";
 import commerical from "../public/images/svg_assets/residential-svgrepo-com.png";
 
-import { CircleUserRound } from "lucide-react";
+import { Car, CircleUserRound } from "lucide-react";
 
-import { getTestimonials } from "@/lib/utils";
+import { getTestimonials, getSliderImages } from "@/lib/utils";
 
 export default function Home() {
   const testimonials = getTestimonials();
@@ -200,47 +201,24 @@ export default function Home() {
 
         <div className="lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5">
           <div className="w-full h-full flex flex-col lg:flex-row">
-            <div className="col-start-1 col-end-2 row-start-2">
-              <Image
-                src={projectPic1}
-                alt="A stunning tiled space showcasing Yan's work"
-                // width={400}
-                // height={400}
-              />
-            </div>
-
-            <div className="col-start-2 col-end-4 row-start-2">
-              <Image
-                src={projectPic2}
-                alt="A stunning tiled space showcasing Yan's work"
-                // width={400}
-                // height={600}
-              />
-            </div>
-
-            <div className="col-start-4 col-end-5 row-start-2">
-              <Image
-                src={projectPic4}
-                alt="A stunning tiled space showcasing Yan's work"
-                // width={400}
-                // height={400}
-              />
-            </div>
-            <div className="col-start-4 col-end-5 row-start-2">
-              <Image
-                src={projectPic5}
-                alt="A stunning tiled space showcasing Yan's work"
-                // width={400}
-                // height={400}
-              />
-            </div>
-            <div className="col-start-4 col-end-5 row-start-2">
-              <Image
-                src={projectPic6}
-                alt="A stunning tiled space showcasing Yan's work"
-                // width={400}
-                // height={400}
-              />
+            <div className="col-start-1 col-end-2 row-start-2 w-full">
+                <Carousel>
+                  {[
+                    projectPic1,
+                    projectPic2,
+                    projectPic4,
+                    projectPic5,
+                    projectPic6,
+                  ].map((image, index) => (
+                    <Image
+                      key={index}
+                      src={image}
+                      alt="A stunning tiled space showcasing Yan's work"
+                      // width={400}
+                      // height={400}
+                    />
+                  ))}
+                </Carousel>
             </div>
           </div>
         </div>
