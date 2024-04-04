@@ -19,21 +19,27 @@
   }
 }
 
-/* @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-} */
-
-/* main, nav {
-  @apply max-w-6xl mx-auto my-12;
+.swiper-container {
+  width: 100%;
+  height: 100%;
 }
-p {
-  @apply mt-2;
-} */
-/* h1 {
-  @apply scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight transition-colors first:mt-0;
-} */
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  width: 100%;
+  height: 100%;
+
+  /* Adjust padding as needed, could be removed or reduced */
+  padding: 0;
+}
+
+/* Ensures the image in the slide is responsive and doesn't overflow */
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover; /* Adjust according to your needs */
+}

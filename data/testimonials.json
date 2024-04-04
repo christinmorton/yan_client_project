@@ -6,7 +6,8 @@
     "age": 38,
     "sex": "Female",
     "services_used": "Tile Flooring Installation",
-    "testimonial": "Yan did an outstanding job installing tile flooring in my home. His attention to detail and dedication to ensuring a flawless finish were remarkable. I'm thrilled with the results and would highly recommend his services to anyone in need of expert tile installation."
+    "testimonial": "Yan did an outstanding job installing tile flooring in my home. His attention to detail and dedication to ensuring a flawless finish were remarkable. I'm thrilled with the results and would highly recommend his services to anyone in need of expert tile installation.",
+    "image": "pexels-anastasia-shuraeva-6608313.jpg"
   },
   {
     "id": 2,
@@ -15,7 +16,8 @@
     "age": 50,
     "sex": "Male",
     "services_used": "Outdoor Patio Tiling",
-    "testimonial": "I hired Yan to tile my outdoor patio, and I couldn't be happier with the outcome. His professionalism, expertise, and commitment to delivering exceptional results were evident from start to finish. Now, I have a beautiful outdoor space that I can enjoy for years to come."
+    "testimonial": "I hired Yan to tile my outdoor patio, and I couldn't be happier with the outcome. His professionalism, expertise, and commitment to delivering exceptional results were evident from start to finish. Now, I have a beautiful outdoor space that I can enjoy for years to come.",
+    "image": "pexels-pixabay-220453.jpg"
   },
   {
     "id": 3,
@@ -24,7 +26,8 @@
     "age": 30,
     "sex": "Female",
     "services_used": "Tile Backsplash Installation",
-    "testimonial": "Yan did an amazing job installing a tile backsplash in my kitchen. His attention to detail and precision craftsmanship were second to none. The backsplash has completely transformed the look of my kitchen, and I couldn't be happier with the outcome."
+    "testimonial": "Yan did an amazing job installing a tile backsplash in my kitchen. His attention to detail and precision craftsmanship were second to none. The backsplash has completely transformed the look of my kitchen, and I couldn't be happier with the outcome.",
+    "image": "pexels-christina-morillo-1181690.jpg"
   },
   {
     "id": 4,
@@ -33,7 +36,8 @@
     "age": 42,
     "sex": "Male",
     "services_used": "Bathroom Tile Repair",
-    "testimonial": "Yan repaired the tile in my bathroom, and the results are fantastic. He was professional, efficient, and went above and beyond to ensure the repair was done to perfection. I'm extremely satisfied with his work and would definitely hire him again for future projects."
+    "testimonial": "Yan repaired the tile in my bathroom, and the results are fantastic. He was professional, efficient, and went above and beyond to ensure the repair was done to perfection. I'm extremely satisfied with his work and would definitely hire him again for future projects.",
+    "image": "pexels-italo-melo-2379005.jpg"
   },
   {
     "id": 5,
@@ -42,7 +46,8 @@
     "age": 33,
     "sex": "Female",
     "services_used": "Tile Shower Installation",
-    "testimonial": "Yan installed a tile shower in my master bathroom, and I couldn't be happier with how it turned out. His attention to detail, expertise, and professionalism were exceptional throughout the entire process. I now have a luxurious shower that exceeds my expectations."
+    "testimonial": "Yan installed a tile shower in my master bathroom, and I couldn't be happier with how it turned out. His attention to detail, expertise, and professionalism were exceptional throughout the entire process. I now have a luxurious shower that exceeds my expectations.",
+    "image": "pexels-andrea-piacquadio-774909.jpg"
   },
   {
     "id": 6,
@@ -51,7 +56,8 @@
     "age": 35,
     "sex": "Female",
     "services_used": "Bathroom Renovation",
-    "testimonial": "Yan transformed my outdated bathroom into a spa-like oasis! His attention to detail and expert craftsmanship exceeded my expectations. I'm thrilled with the results and highly recommend his services to anyone looking to upgrade their space."
+    "testimonial": "Yan transformed my outdated bathroom into a spa-like oasis! His attention to detail and expert craftsmanship exceeded my expectations. I'm thrilled with the results and highly recommend his services to anyone looking to upgrade their space.",
+    "image": "pexels-andrea-piacquadio-762020.jpg"
   },
   {
     "id": 7,
@@ -60,7 +66,8 @@
     "age": 45,
     "sex": "Male",
     "services_used": "Kitchen Backsplash Installation",
-    "testimonial": "I hired Yan to install a new backsplash in my kitchen, and I couldn't be happier with the outcome. His professionalism, punctuality, and skillful workmanship were truly impressive. My kitchen looks like it's straight out of a magazine now!"
+    "testimonial": "I hired Yan to install a new backsplash in my kitchen, and I couldn't be happier with the outcome. His professionalism, punctuality, and skillful workmanship were truly impressive. My kitchen looks like it's straight out of a magazine now!",
+    "image": "pexels-chloe-1043471.jpg"
   },
   {
     "id": 8,
@@ -69,7 +76,8 @@
     "age": 28,
     "sex": "Female",
     "services_used": "Flooring Installation",
-    "testimonial": "Yan did an amazing job installing new flooring in my home. He was communicative, reliable, and completed the project on time and within budget. I'm extremely satisfied with the quality of his work and would definitely hire him again for future projects."
+    "testimonial": "Yan did an amazing job installing new flooring in my home. He was communicative, reliable, and completed the project on time and within budget. I'm extremely satisfied with the quality of his work and would definitely hire him again for future projects.",
+    "image": "pexels-monstera-production-5876695.jpg"
   },
   {
     "id": 9,
@@ -78,7 +86,8 @@
     "age": 40,
     "sex": "Male",
     "services_used": "Shower Surround Installation",
-    "testimonial": "Yan exceeded all my expectations with his shower surround installation. He was professional, knowledgeable, and meticulous in his work. The end result is absolutely stunning, and I can't thank him enough for transforming my bathroom."
+    "testimonial": "Yan exceeded all my expectations with his shower surround installation. He was professional, knowledgeable, and meticulous in his work. The end result is absolutely stunning, and I can't thank him enough for transforming my bathroom.",
+    "image": "pexels-dijitalkadrajım-17787336.jpg"
   },
   {
     "id": 10,
@@ -87,6 +96,7 @@
     "age": 32,
     "sex": "Female",
     "services_used": "Custom Tile Design",
-    "testimonial": "I had a specific vision for a custom tile design in my home, and Yan brought it to life perfectly. His creativity, attention to detail, and professionalism were outstanding throughout the entire process. I'm thrilled with the final result and highly recommend his services."
+    "testimonial": "I had a specific vision for a custom tile design in my home, and Yan brought it to life perfectly. His creativity, attention to detail, and professionalism were outstanding throughout the entire process. I'm thrilled with the final result and highly recommend his services.",
+    "image": "pexels-vinicius-wiesehofer-1130626.jpg"
   }
 ]

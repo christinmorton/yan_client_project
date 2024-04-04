@@ -1,16 +1,9 @@
 import Image from "next/image";
 
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-
 import HomepageContactForm from "@/components/forms/HomepageContactForm";
 import Carousel from "@/components/Carousel";
+import Slider from "@/components/Slider";
+import Map from "@/components/Map";
 
 import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
 import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
@@ -225,8 +218,8 @@ export default function Home() {
       
       </section>
 
-      <section className="min-w-full  bg-slate-100">
-        <div className="p-12">
+      <section className="min-w-full flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-y-12 p-24 bg-slate-100">
+        <div className="row-start-1 row-end-2 col-start-1 col-end-4 p-12">
           <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
             Testimonials
           </h2>
@@ -243,33 +236,35 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="gap-6">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.id}>
-              <CardHeader>
-                {/* <Image
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  width={100}
-                  height={100}
-                /> */}
-                <CircleUserRound />
-                <CardTitle>
-                  {testimonial.first_name} {testimonial.last_name}
-                </CardTitle>
-                <h4>{testimonial.services_used}</h4>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>{testimonial.testimonial}</CardDescription>
-              </CardContent>
-              <CardFooter></CardFooter>
-            </Card>
-          ))}
+        <div className="relative flex flex-col lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div className="bg-hero"></div>
+            <Slider> 
+            {testimonials.map((testimonial) => (
+                <div key={testimonial.id} className=' bg-white '>
+                    <Image
+                      src={`/images/profile_pics/${testimonial.image}`}
+                      alt={`A photo of ${testimonial.first_name} ${testimonial.last_name}, a satisfied customer!`}
+                      loading="lazy"
+                      width={100}
+                      height={100}
+                    />
+                    {/* <CircleUserRound /> */}
+                    <h4>
+                      {testimonial.first_name} {testimonial.last_name}
+                    </h4>
+                    <h4>{testimonial.services_used}</h4>
+      
+                    <p>{testimonial.testimonial}</p>
+                  </div>
+              ))}
+            </Slider>
         </div>
+
+        {/* <div className="gap-6"></div> */}
       </section>
 
-      <div className="min-h-[250px] m-44 ">
-        <div className="p-6">
+      <section className="min-h-[250px] px-44 pt-44 bg-picton-blue-300">
+        <div className="p-6 bg-white rounded-t-2xl">
           <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
             Contact Us
           </h2>
@@ -283,10 +278,22 @@ export default function Home() {
           </p>
         </div>
 
-        <div className=" w-full p-6 bg-slate-600">
+        <div className=" w-full p-6 bg-picton-blue-400">
           <HomepageContactForm />
         </div>
-      </div>
+
+        <div className="w-full flex flex-col items-center justify-between gap-x-8 pt-12 px-8 pb-12 bg-white lg:flex-row">
+        <div>
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">Contact Information</h2>
+          <h4 className="text-2xl font-extralight text-center lg:text-xl lg:text-left text-picton-blue-700">Phone: <tel>18001234567</tel> </h4>
+          <h4 className="text-2xl font-extralight text-center lg:text-xl lg:text-left text-picton-blue-700">Email: <span>yanbky@gmail.com</span></h4>
+          <p className="text-base text-center sm:text-sm md:text-base md:text-left lg:text-md xl:text-lg 2xl:text-xl text-picton-blue-600 mb-4">Get in contact with me at anytime. I serve the city of Las Vegas with the highest quality of Tile Setting Services</p>
+        </div>
+        <div className="w-full">
+          <Map address="Las Vegas, NV" />
+        </div>
+        </div>
+      </section>
     </main>
   );
 }
