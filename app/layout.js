@@ -4,6 +4,7 @@ import MainNavigation from "@/components/navigation/MainNavigation";
 import Footer from "@/components/Footer";
 import Modal from "@/components/Modal";
 import AlertModal from "@/components/AlertModal";
+import { Suspense } from "react";
 
 
 export const metadata = {
@@ -17,7 +18,9 @@ export default function RootLayout({ children }) {
       <body className="overflow-x-hidden">
         <MainNavigation />
         {children}
-        <AlertModal />
+        <Suspense fallback={<div>Loading...</div>}>
+          <AlertModal />  
+        </Suspense>
         <Footer />
       </body>
     </html>
