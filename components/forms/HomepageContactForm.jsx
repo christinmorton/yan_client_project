@@ -23,23 +23,23 @@ function HomepageContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className='min-w-[300px]'>
         <div>
-            <label htmlFor="name">Name</label>
+            <label htmlFor="name" className='text-white'>Name</label>
             <Input {...register("example")} id="name" placeholder="John Doe" />
         </div>
         <div>
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email" className='text-white'>Email</label>
             <Input {...register("example")} id="email" type="email" placeholder="" />
         </div>
         <div>
-            <label htmlFor="subject">Subject</label>
+            <label htmlFor="subject" className='text-white'>Subject</label>
             <Input {...register("example")} id="subject" placeholder="John Doe" />
         </div>
         <div>
-            <label htmlFor="message">Message</label>
+            <label htmlFor="message" className='text-white'>Message</label>
             <Textarea {...register("example")} id="message" placeholder="How can we help you?" />
         </div>
         
-        <Button type="submit">Submit</Button>
+        <Button type="submit" className='text-white'>Submit</Button>
     </form>
   )
 }

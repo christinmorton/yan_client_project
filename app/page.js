@@ -28,21 +28,21 @@ export default function Home() {
   return (
     <main className="min-w-full">
       <section id="hero">
-        <div className="container flex flex-col-reverse mx-auto p-6 lg:flex-row lg:mb-0">
+        <div className="container flex flex-col-reverse gap-x-6 mx-auto p-6 lg:flex-row lg:mb-0">
           {/* Content */}
-          <div className="flex flex-col space-y-10 lg:mt-16 lg:w-1/2">
-            <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+          <div className="flex flex-col space-y-10 mt-12 lg:mt-16 lg:w-1/2">
+            <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
               Welcome to <br className="hidden lg:visible" /> Yan's Tiles
             </h1>
             <h2 className="max-w-md mx-auto text-sm text-center text-gray-400 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
               Elevate Your Space with Expert Tile Setting
             </h2>
-            <p className="max-w-md mx-auto text-lg text-center text-gray-400 lg:text-2xl lg:text-left lg:mt-0 lg:mx-0">
-              Transforming Homes and Businesses with Exquisite Craftsmanship{" "}
+            <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
+              Transforming homes and businesses with exquisite Craftsmanship
             </p>
 
             <div className="flex items-center justify-center w-full space-x-4 lg:justify-start">
-              <button className="bg-picton-blue-400 text-white px-4 py-4 rounded shadow-md border border-picton-blue-400 md:text-base hover:bg-white hover:text-picton-blue-300">
+              <button className="bg-picton-blue-400 text-white px-4 py-4 rounded shadow-md border border-picton-blue-500 md:text-base hover:bg-white hover:text-picton-blue-300">
                 Get a Free Quote
               </button>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
         <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div>
       </section>
 
-      <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row">
+      <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row  p-16">
         <div className="w-1/2 flex m-8 items-center justify-end ">
           <Image
             className=""
@@ -87,17 +87,17 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="min-w-full min-h-screen py-6 bg-slate-100 ">
+      <section className="min-w-full min-h-screen p-16 bg-slate-100 ">
         {/* section title */}
-        <div className="flex flex-row items-center justify-center lg:justify-end pt-4">
-          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-right lg:mr-28 text-picton-blue-600">
+        <div className="flex flex-row items-center justify-center lg:hidden lg:justify-end pt-4">
+          <h2 className="text-3xl font-semi-bold text-center block lg:hidden lg:text-6xl lg:text-right lg:mr-28 text-picton-blue-500">
             Our Services
           </h2>
         </div>
 
-        <div className="flex flex-col gap-4 lg:flex-row">
+        <div className="flex flex-col gap-4 lg:flex-row ">
           <div className="w-full min-h-[300px] flex flex-col items-center justify-evenly lg:flex-row gap-4">
-            <div className="flex flex-wrap items-center justify-center lg:flex-col lg:justify-evenly">
+            <div className="flex flex-wrap items-center justify-center gap-0 p-24 lg:gap-4 lg:flex-col lg:justify-evenly">
               <div className="card relative group w-[50%] lg:w-auto lg:flex-1">
                 <Image
                   src={bathroom}
@@ -161,11 +161,14 @@ export default function Home() {
           </div>
 
           <div className="w-full flex flex-col items-center lg:items-end justify-center my-8 mr-28 gap-y-4">
-            <h2 className="text-lg font-semi-bold text-center lg:text-xl lg:text-right text-grayishBlue">
+            <h2 className="text-3xl font-semi-bold text-right hidden lg:block lg:text-6xl text-picton-blue-500">
+              Our Services
+            </h2>
+            <h2 className="text-lg font-semi-bold text-center lg:text-xl lg:text-right text-picton-blue-500">
               Expert Tile Setting Services
             </h2>
             <h4 className="text-md font-extralight text-right lg:text-lg lg:text-right text-grayishBlue">Tailored to Your Needs</h4>
-            <p className="max-w-md mx-auto text-sm text-right text-picton-blue-600 mb-12 lg:text-md lg:mt-0 lg:mx-0">
+            <p className="max-w-md mx-auto text-sm text-center text-picton-blue-500 mb-12 lg:text-md lg:text-right lg:mt-0 lg:mx-0">
               From residential renovations to commercial installations, Yan offers a comprehensive range of tile setting services to suit every project requirement. Whether you're looking to refresh your kitchen backsplash, upgrade your bathroom flooring, or create a striking feature wall. Yan combines precision, creativity, and attention to detail to bring your vision to life. Contact us today to explore our full range of services.
             </p>
           </div>
@@ -220,12 +223,12 @@ export default function Home() {
 
       <section className="min-w-full flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-y-12 p-24 bg-slate-100">
         <div className="row-start-1 row-end-2 col-start-1 col-end-4 p-12">
-          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
             Testimonials
           </h2>
-          <h2>Hear From Our Satisfied Clients </h2>
+          <h2 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-gray-400">Hear From Our Satisfied Clients </h2>
           <div>
-            <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
+            <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-picton-blue-500 mb-4">
               Don't just take our word for it—discover what our satisfied
               clients have to say about their experience working with Yan. From
               prompt communication to flawless execution, our dedication to
@@ -244,6 +247,8 @@ export default function Home() {
                     <Image
                       src={`/images/profile_pics/${testimonial.image}`}
                       alt={`A photo of ${testimonial.first_name} ${testimonial.last_name}, a satisfied customer!`}
+                      
+                      className="rounded-full mx-auto"
                       loading="lazy"
                       width={100}
                       height={100}
@@ -265,11 +270,11 @@ export default function Home() {
 
       <section className="min-h-[250px] px-44 pt-44 bg-picton-blue-300">
         <div className="p-6 bg-white rounded-t-2xl">
-          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
             Contact Us
           </h2>
-          <h3>Get in Touch </h3>
-          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-gray-800 mb-4">
+          {/* <h3 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-gray-600">Get in Touch </h3> */}
+          <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-picton-blue-500 mb-4">
             Ready to transform your space with expert tile setting? Reach out to
             Yan today to discuss your project requirements and schedule a
             consultation. Whether you have questions about our services or are
@@ -283,11 +288,11 @@ export default function Home() {
         </div>
 
         <div className="w-full flex flex-col items-center justify-between gap-x-8 pt-12 px-8 pb-12 bg-white lg:flex-row">
-        <div>
-          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-600">Contact Information</h2>
-          <h4 className="text-2xl font-extralight text-center lg:text-xl lg:text-left text-picton-blue-700">Phone: <tel>18001234567</tel> </h4>
-          <h4 className="text-2xl font-extralight text-center lg:text-xl lg:text-left text-picton-blue-700">Email: <span>yanbky@gmail.com</span></h4>
-          <p className="text-base text-center sm:text-sm md:text-base md:text-left lg:text-md xl:text-lg 2xl:text-xl text-picton-blue-600 mb-4">Get in contact with me at anytime. I serve the city of Las Vegas with the highest quality of Tile Setting Services</p>
+        <div className="space-y-4 p-4">
+          <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Contact Info</h2>
+          <h4 className="text-lg font-extralight text-center lg:text-xl lg:text-left text-gray-400">Phone: <tel>18001234567</tel> </h4>
+          <h4 className="text-lg font-extralight text-center lg:text-xl lg:text-left text-gray-400">Email: <span>yanbky@gmail.com</span></h4>
+          <p className="text-base text-center sm:text-sm md:text-base md:text-left lg:text-md xl:text-lg 2xl:text-xl text-picton-blue-500 mb-4">Get in contact with me at anytime. I serve the city of Las Vegas with the highest quality of Tile Setting Services</p>
         </div>
         <div className="w-full">
           <Map address="Las Vegas, NV" />
