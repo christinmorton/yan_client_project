@@ -21,7 +21,7 @@ function HomepageContactForm() {
   console.log(watch("example")); 
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className='min-w-[300px]'>
+    <form onSubmit={handleSubmit(onSubmit)} className='min-w-[300px] p-6'>
         <div>
             <label htmlFor="name" className='text-white'>Name</label>
             <Input {...register("example")} id="name" placeholder="John Doe" />

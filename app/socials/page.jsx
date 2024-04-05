@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 
 function Socials() {
@@ -8,36 +9,36 @@ function Socials() {
         <h1>Socials</h1>
 
         <div>
-          <a
+          <Link
             href="https://www.facebook.com/yan.tilesetter"
             target="_blank"
             rel="noreferrer"
           >
-            <img
+            <Image
               src="https://img.icons8.com/color/48/000000/facebook.png"
               alt="facebook"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.instagram.com/yan.tilesetter/"
             target="_blank"
             rel="noreferrer"
           >
-            <img
+            <Image
               src="https://img.icons8.com/color/48/000000/instagram-new.png"
               alt="instagram"
             />
-          </a>
-          <a
+          </Link>
+          <Link
             href="https://www.linkedin.com/in/yan-tilesetter-0b2b1b1b6/"
             target="_blank"
             rel="noreferrer"
           >
-            <img
+            <Image
               src="https://img.icons8.com/color/48/000000/linkedin.png"
               alt="linkedin"
             />
-          </a>
+          </Link>
         </div>
       </div>
 

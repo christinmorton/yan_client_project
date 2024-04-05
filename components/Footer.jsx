@@ -47,7 +47,7 @@ function Footer() {
               </div>
 
               <div className="min-h-[16px] flex flex-col items-center justify-between font-bold lg:justify-normal">
-                <p className=" text-white text-center  mt-12 lg:mt-auto ">Copyright &copy; <Link href="#" className="font-serif font-semibold">Yan's Tiles</Link>, 2024, All rights reserved</p>
+                <p className=" text-white text-center  mt-12 lg:mt-auto ">Copyright &copy; <Link href="#" className="font-serif font-semibold">Yan&apos;s Tiles</Link>, 2024, All rights reserved</p>
 
                 <Link href="#" className="mt-12 lg:mt-0">
                   {/* <span>Yan | Tile Setter</span> */}

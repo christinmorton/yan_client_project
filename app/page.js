@@ -32,7 +32,7 @@ export default function Home() {
           {/* Content */}
           <div className="flex flex-col space-y-10 mt-12 lg:mt-16 lg:w-1/2">
             <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
-              Welcome to <br className="hidden lg:visible" /> Yan's Tiles
+              Welcome to <br className="hidden lg:visible" /> Yan&apos;s Tiles
             </h1>
             <h2 className="max-w-md mx-auto text-sm text-center text-gray-400 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
               Elevate Your Space with Expert Tile Setting
@@ -169,7 +169,7 @@ export default function Home() {
             </h2>
             <h4 className="text-md font-extralight text-right lg:text-lg lg:text-right text-grayishBlue">Tailored to Your Needs</h4>
             <p className="max-w-md mx-auto text-sm text-center text-picton-blue-500 mb-12 lg:text-md lg:text-right lg:mt-0 lg:mx-0">
-              From residential renovations to commercial installations, Yan offers a comprehensive range of tile setting services to suit every project requirement. Whether you're looking to refresh your kitchen backsplash, upgrade your bathroom flooring, or create a striking feature wall. Yan combines precision, creativity, and attention to detail to bring your vision to life. Contact us today to explore our full range of services.
+              From residential renovations to commercial installations, Yan offers a comprehensive range of tile setting services to suit every project requirement. Whether you&apos;re looking to refresh your kitchen backsplash, upgrade your bathroom flooring, or create a striking feature wall. Yan combines precision, creativity, and attention to detail to bring your vision to life. Contact us today to explore our full range of services.
             </p>
           </div>
         </div>
@@ -191,7 +191,7 @@ export default function Home() {
             contemporary concepts, our portfolio showcases the versatility and
             quality of our workmanship. Browse through our gallery and
             envision the possibilities for transforming your home or business
-            with Yan's expert tile setting services.
+            with Yan&apos;s expert tile setting services.
           </p>
         </div>
 
@@ -229,7 +229,7 @@ export default function Home() {
           <h2 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-gray-400">Hear From Our Satisfied Clients </h2>
           <div>
             <p className="text-base sm:text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl text-picton-blue-500 mb-4">
-              Don't just take our word for it—discover what our satisfied
+              Don&apos;t just take our word for it—discover what our satisfied
               clients have to say about their experience working with Yan. From
               prompt communication to flawless execution, our dedication to
               customer satisfaction shines through in every testimonial. Read
@@ -269,7 +269,7 @@ export default function Home() {
       </section>
 
       <section className="min-h-[250px] px-44 pt-44 bg-picton-blue-300">
-        <div className="p-6 bg-white rounded-t-2xl">
+        <div className="p-12 bg-white rounded-t-2xl">
           <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
             Contact Us
           </h2>
@@ -278,7 +278,7 @@ export default function Home() {
             Ready to transform your space with expert tile setting? Reach out to
             Yan today to discuss your project requirements and schedule a
             consultation. Whether you have questions about our services or are
-            ready to get started, we're here to help. Fill out the form below,
+            ready to get started, we&apos;re here to help. Fill out the form below,
             and one of our team members will be in touch with you shortly.
           </p>
         </div>
