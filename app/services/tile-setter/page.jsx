@@ -14,7 +14,7 @@ function TileSetter() {
           </h4>
 
           <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            Transform Your Vision into Reality with Yan's Tile Craftsmanship and Impeccable Attention to Detail.
+            Transform Your Vision into Reality with Yan&apos;s Tile Craftsmanship and Impeccable Attention to Detail.
           </p>
           <button className="bg-picton-blue-400 text-white px-4 py-4 rounded shadow-md border border-picton-blue-500 md:text-base hover:bg-white hover:text-picton-blue-300">Request a Free Consultation</button>
         </div>
@@ -47,7 +47,7 @@ function TileSetter() {
       <section className="min-w-full min-h-screen  bg-slate-200">
         <div className="">
         <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
-          Yan's Process: From Concept to Completion Heading: 
+          Yan&apos;s Process: From Concept to Completion Heading: 
         </h2>
 
         <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">The Yan Difference: A Proven Process for Success</h2>
@@ -81,7 +81,7 @@ function TileSetter() {
           expertise to every project.
         </p>
         <p className="max-w-md mx-auto text-sm text-center mb-4 text-white lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
-          <span>Craftsmanship:</span> Yan's commitment to quality craftsmanship shines
+          <span>Craftsmanship:</span> Yan&apos;s commitment to quality craftsmanship shines
           through in every tile he sets, delivering results that are as
           beautiful as they are durable.
         </p>
