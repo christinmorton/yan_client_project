@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
+
+import {FaFacebook, FaInstagram, FaLinkedin} from "react-icons/fa";
 
 function Socials() {
   return (
@@ -14,30 +15,33 @@ function Socials() {
             target="_blank"
             rel="noreferrer"
           >
-            <Image
+            <FaFacebook size={128}/>
+            {/* <Image
               src="https://img.icons8.com/color/48/000000/facebook.png"
               alt="facebook"
-            />
+            /> */}
           </Link>
           <Link
             href="https://www.instagram.com/yan.tilesetter/"
             target="_blank"
             rel="noreferrer"
           >
-            <Image
+            <FaInstagram size={128}/>
+            {/* <Image
               src="https://img.icons8.com/color/48/000000/instagram-new.png"
               alt="instagram"
-            />
+            /> */}
           </Link>
           <Link
             href="https://www.linkedin.com/in/yan-tilesetter-0b2b1b1b6/"
             target="_blank"
             rel="noreferrer"
           >
-            <Image
+            <FaLinkedin size={128}/> 
+            {/* <Image
               src="https://img.icons8.com/color/48/000000/linkedin.png"
               alt="linkedin"
-            />
+            /> */}
           </Link>
         </div>
       </div>
