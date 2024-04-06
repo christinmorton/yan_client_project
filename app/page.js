@@ -268,7 +268,7 @@ export default function Home() {
         {/* <div className="gap-6"></div> */}
       </section>
 
-      <section className="min-h-[250px] px-44 pt-44 bg-picton-blue-300">
+      <section className="min-h-[250px] px-24 pt-24 lg:px-44 lg:pt-44 bg-picton-blue-300">
         <div className="p-12 bg-white rounded-t-2xl">
           <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
             Contact Us

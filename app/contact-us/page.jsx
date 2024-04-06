@@ -1,55 +1,34 @@
 import React from "react";
 
+import HomepageContactForm from "@/components/forms/HomepageContactForm";
+
 function ContactUs() {
   return (
     <main className="min-w-full">
-      <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
-        <div className="col-start-2 col-end-4">
-          <h3>🏗️ Transforming Spaces with Expert Tile Setting Services</h3>
-          <p>
+      <section className="min-w-full min-h-screen  bg-slate-100">
+        <div className="">
+          <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">🏗️ Transforming Spaces with Expert Tile Setting Services</h1>
+          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
             Are you looking to elevate the aesthetic appeal of your home or
             workspace? Meet Yan, your trusted partner in crafting stunning tile
             designs that breathe new life into any environment. With over two
             decades of hands-on experience in construction work, Yan brings a
             wealth of expertise to every project he undertakes.
           </p>
-          <p>
-            {`Originally from Ukraine, Yan's journey in the United States has been
+          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
+            Originally from Ukraine, Yan&apos;s journey in the United States has been
             nothing short of remarkable. After honing his skills in the bustling
             streets of New York City for 11 years, he now calls the vibrant city
-            of Las Vegas his home.`}
+            of Las Vegas his home.
           </p>
         </div>
-      </div>
+      </section>
 
       <div className="min-w-full min-h-screen grid grid-cols-4 bg-slate-100">
         <div className=" col-start-2 col-end-4">
-          <h1>Contact Us</h1>
+          <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Contact Us</h1>
           <div>
-            <form className="w-1/2">
-              <div>
-                <label htmlFor=""></label>
-                <input type="text" placeholder="enter first name" />
-              </div>
-              <div>
-                <label htmlFor=""></label>
-                <input type="text" placeholder="enter last name" />
-              </div>
-
-              <div>
-                <label htmlFor=""></label>
-                <input type="text" placeholder="enter email" />
-              </div>
-
-              <div>
-                <label htmlFor=""></label>
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-              </div>
-
-              <div>
-                <button>Submit</button>
-              </div>
-            </form>
+            <HomepageContactForm />
           </div>
         </div>
       </div>
