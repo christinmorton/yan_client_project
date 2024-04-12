@@ -29,7 +29,6 @@ function MainNavigation() {
         <div className="hidden items-center space-x-10 uppercase text-grayishBlue md:flex">
           <Link href="/services/tile-setter"><span className="tracking-widest hover:text-picton-blue-400"> Services</span></Link>
           <Link href="/projects" className="tracking-widest hover:text-picton-blue-400">Projects</Link>
-          <Link href="/about-us" className="tracking-widest hover:text-picton-blue-400">About</Link>
           <button className="px-8 py-2 text-white bg-picton-blue-400 border-2 border-picton-blue-300 rounded-lg shadow-md hover:text-picton-blue-300 hover:bg-white">Contact</button>
           {/* <Link href="/contact-us" className="tracking-widest hover:text-softRed">Contact Us</Link> */}
         </div>

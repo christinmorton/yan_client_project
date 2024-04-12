@@ -4,10 +4,7 @@ import React from "react";
 function FooterNavigation() {
   return (
       <>
-        <div className="h-10 group">
-        <Link href="/socials">Socials</Link>
-        <div className="mx-2 group-hover:border-b"></div>
-        
+        <div className="h-10 group">    
         </div>
         <div className="h-10 group">
           <Link href="/faqs">FAQs</Link>
@@ -15,11 +12,11 @@ function FooterNavigation() {
 
         </div>
         <div className="h-10 group">
-          <Link href="/privacy-policy">Privacy Policy</Link>
+          <Link href="/">Privacy Policy</Link>
           <div className="mx-2 group-hover:border-b"></div>
         </div>
         <div className="h-10 group">
-          <Link href="/terms-of-services">Terms of Service</Link>
+          <Link href="/">Terms of Service</Link>
           <div className="mx-2 group-hover:border-b"></div>
         </div>
         <div className="h-10 group">
