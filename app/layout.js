@@ -6,7 +6,6 @@ import Modal from "@/components/Modal";
 import AlertModal from "@/components/AlertModal";
 import { Suspense } from "react";
 
-
 export const metadata = {
   title: "Welcome to Yan's Tile Setting Services",
   description: "Welcome to Yan's Tile Setting Services",
@@ -16,7 +15,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="overflow-x-hidden">
-        <MainNavigation />
+         <MainNavigation />
+        
         {children}
         <Suspense fallback={<div>Loading...</div>}>
           <AlertModal />  

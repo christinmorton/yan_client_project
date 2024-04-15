@@ -2,17 +2,26 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import React from "react";
-import { Button } from "../ui/button";
-import { MenuSquare } from "lucide-react";
+import {useState} from "react";
+import { IoMenu } from "react-icons/io5";
+import { FaRegTimesCircle } from "react-icons/fa";
+
+
 
 // import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
 import logoTextMark from '../../public/images/yans_logo/Yans_Tiles_Logo_word_mark_black.png';
+import MobileNavigation from "./MobileNavigation";
 
 function MainNavigation() {
+  const [menuOpen, setMenuOpen] = useState(true);
 
   const onToggleMenu = (e) => () => {
-    console.log('clicked')
+    if(menuOpen) {
+      setMenuOpen(false);
+      return;
+    } else {
+      setMenuOpen(true);
+    }
   }
 
   return (
@@ -34,7 +43,18 @@ function MainNavigation() {
         </div>
 
 
-
+        <div className="flex flex-row justify-between md:hidden">
+          {menuOpen ? 
+            (
+              <button id="menu-btn" onClick={onToggleMenu()} className="z-30 block px-4 md:hidden focus:outline-none">
+                <IoMenu size={36} className="text-picton-blue-500 border-2 border-picton-blue-500 rounded-lg" />
+              </button>
+            ) : (
+              <button id="menu-btn" onClick={onToggleMenu()} className="z-30 block px-4 md:hidden focus:outline-none">
+                <FaRegTimesCircle size={36} className="text-picton-blue-500" />
+              </button>
+            )}
+        </div>
         
 
         {/* <div className="flex items-center gap-6">
@@ -42,6 +62,7 @@ function MainNavigation() {
           <MenuSquare onClick={(e) => onToggleMenu(e)} className="text-3xl cursor-pointer md:hidden" />
         </div> */}
       </nav>
+      <MobileNavigation open={menuOpen} />
     </header>
   );
 }

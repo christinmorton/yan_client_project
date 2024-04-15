@@ -21,6 +21,7 @@ import commerical from "../public/images/svg_assets/residential-svgrepo-com.png"
 import { Car, CircleUserRound } from "lucide-react";
 
 import { getTestimonials, getSliderImages } from "@/lib/utils";
+import SimpleForm from "@/components/forms/SimpleForm";
 
 export default function Home() {
   const testimonials = getTestimonials();
@@ -241,28 +242,7 @@ export default function Home() {
 
         <div className="relative flex flex-col lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
             <div className="bg-hero"></div>
-            <Slider> 
-            {testimonials.map((testimonial) => (
-                <div key={testimonial.id} className=' bg-white '>
-                    <Image
-                      src={`/images/profile_pics/${testimonial.image}`}
-                      alt={`A photo of ${testimonial.first_name} ${testimonial.last_name}, a satisfied customer!`}
-                      
-                      className="rounded-full mx-auto"
-                      loading="lazy"
-                      width={100}
-                      height={100}
-                    />
-                    {/* <CircleUserRound /> */}
-                    <h4>
-                      {testimonial.first_name} {testimonial.last_name}
-                    </h4>
-                    <h4>{testimonial.services_used}</h4>
-      
-                    <p>{testimonial.testimonial}</p>
-                  </div>
-              ))}
-            </Slider>
+            <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Testimonials go here</h1>
         </div>
 
         {/* <div className="gap-6"></div> */}
@@ -284,7 +264,8 @@ export default function Home() {
         </div>
 
         <div className=" w-full p-6 bg-picton-blue-400">
-          <HomepageContactForm />
+          {/* <HomepageContactForm /> */}
+          <SimpleForm />
         </div>
 
         <div className="w-full flex flex-col items-center justify-between gap-x-8 pt-12 px-8 pb-12 bg-white lg:flex-row">
