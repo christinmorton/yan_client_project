@@ -9,7 +9,7 @@ import { FaRegTimesCircle } from "react-icons/fa";
 
 
 // import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
-import logoTextMark from '../../public/images/yans_logo/Yans_Tiles_Logo_word_mark_black.png';
+import logoTextMark from '../../public/images/yans_logo/yans_logo_2.svg';
 import MobileNavigation from "./MobileNavigation";
 
 function MainNavigation() {
@@ -30,7 +30,7 @@ function MainNavigation() {
         <div className="z-30">
           <Link href="/">
             {/* <span>Yan | Tile Setter</span> */}
-            <Image src={logoTextMark} alt="logo mark of Yan's Tiles" id="logo" className="logo w-36 h-28" />
+            <Image src={logoTextMark} alt="logo mark of Yan's Tiles" id="logo" className="logo w-56 h-56" />
           </Link>
         </div>
 
