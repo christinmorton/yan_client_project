@@ -1,21 +1,18 @@
 [
     {
-        "project_name": "Flooring Installation"
+        "project_name": "Flooring Installation",
+        "image": "Resized_Resized_20240306_165443.JPEG"
     },
     {
         "project_name": "Bathroom Renovation",
-        "image": "public/images/Resized_Resized_20231204_161849_223463781147931.JPEG"
-    },
-    {
-        "project_name": "Bathroom Tile Repair",
-        "image": "public/images/stock/pexels-stefan-de-vries-15871631.jpg"
+        "image": "Resized_Resized_20231204_161849_223463781147931.JPEG"
     },
     {
         "project_name": "Commercial Courtyard Installation",
-        "image": "public/images/Resized_Resized_20230815_102145_223622606178443.JPEG"
+        "image": "Resized_Resized_20230815_102145_223622606178443.JPEG"
     },
     {
         "project_name": "Commercial Restuarant Tilling Installation",
-        "image": "public/images/Resized_Resized_20231109_125211_223389226286137.JPEG"
+        "image": "Resized_Resized_20231109_125211_223389226286137.JPEG"
     }
 ]

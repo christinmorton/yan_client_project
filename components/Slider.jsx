@@ -1,42 +1,55 @@
 'use client'
 
-// core version + navigation, pagination modules:
-import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+'use client'
 
-// import function to register Swiper custom elements
-import { register } from 'swiper/element/bundle';
+import Image from 'next/image'
+import { useState } from 'react'
+// import {CircleChevronLeft, CircleChevronRight} from 'lucide-react'
+// import {ChevronLeftCircle, ChevronRightCircle} from 'lucide-react'
+import {BsChevronCompactLeft, BsChevronCompactRight} from 'react-icons/bs'
+import { PiDotOutlineFill } from "react-icons/pi";
 
-// import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 
-// register Swiper custom elements
-register();
+const Slider = ({slides}) => {
+    const  [currentSlide, setCurrentSlide] = useState(0);
 
-const Slider = ({children: slides}) => {
+    const prevSlide = () => {
+        const isFirstSlide = currentSlide === 0;
+        const newIndex = isFirstSlide ? slides.length -1 : currentSlide - 1;
+        
+        setCurrentSlide(newIndex)
+    }
+
+    const nextSlide = () => {
+        const isLastSlide = currentSlide === slides.length - 1;
+        const newIndex = isLastSlide ? 0 : currentSlide + 1;
+
+        setCurrentSlide(newIndex)
+    }
+
+    const goToSlide = (index) => {
+        setCurrentSlide(index)
+    }
+
   return (
-    <div className='p-12'>
-        <swiper-container 
-            effects={['coverflow']}
-            centeredSlides="true"
-            grabCursor="true"
-            slides-per-view="1" 
-            speed="500" 
-            loop="true" 
-            css-mode="true" 
-            navigation="true" 
-            pagination="true" 
-            scrollbar="true"
-        >
+    <div className='relative h-full'>
+        {/* Left Arrow */}
+        <div onClick={prevSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 left-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
+            <BsChevronCompactLeft size={36} className=''/>
+        </div>
+        
+        {/* Right Arrow */}
+        <div onClick={nextSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 right-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
+            <BsChevronCompactRight size={36}/>
+        </div>
+
+        <div style={{backgroundImage: `url(http://localhost:3000/images/${slides[currentSlide].image})`}} className='w-full h-full rounded-md bg-center bg-cover'></div>
+
+        <div className="flex items-center justify-center mx-auto">
             {slides.map((slide, index) => (
-                <swiper-slide key={index}>
-                    {slide}
-                </swiper-slide>
+                <div key={index} className='' onClick={() => goToSlide(index)}><PiDotOutlineFill size={24} className=' mb-3 cursor-pointer text-md' /></div>
             ))}
-        </swiper-container>
+        </div>
     </div>
   )
 }
