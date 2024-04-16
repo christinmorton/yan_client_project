@@ -51,15 +51,18 @@ export default function Home() {
 
           <div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
             <div className="bg-hero"></div>
-            <Image
-              src={headerPic}
-              alt="A stunning tiled space showcasing Yan's work"
-              className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
-            />
+            <Carousel>
+                <Image
+                  src={headerPic}
+                  alt="A stunning tiled space showcasing Yan's work"
+                  className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
+                />
+            </Carousel>
+            
           </div>
         </div>
 
-        <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div>
+        {/* <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div> */}
       </section>
 
       <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row  p-16">
@@ -199,7 +202,8 @@ export default function Home() {
         <div className="lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5">
           <div className="w-full h-full flex flex-col lg:flex-row">
             <div className="col-start-1 col-end-2 row-start-2 w-full">
-                <Carousel>
+                <p>Portfolio goes here</p>
+                {/* <Carousel>
                   {[
                     projectPic1,
                     projectPic2,
@@ -215,7 +219,7 @@ export default function Home() {
                       // height={400}
                     />
                   ))}
-                </Carousel>
+                </Carousel> */}
             </div>
           </div>
         </div>
