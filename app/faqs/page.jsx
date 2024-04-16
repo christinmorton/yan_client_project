@@ -1,28 +1,10 @@
 // 'use client';
 
-// import {useState} from "react";
-
 import FaqsBox from "@/components/FAQsBox";
-// import { getFAQs } from "@/lib/utils";
+import FAQForm from "@/components/forms/FAQForm";
+
 
 function Faqs() {
-  // const faqs = getFAQs();
-
-  // const [isRotated, setIsRotated] = useState(true);
-  // const [expanded, setExpanded] = useState(false);
-
-  // const toggleArrowRotation = () => {
-  //   setIsRotated(!isRotated);
-  //   setExpanded(!expanded);
-  // };
-
-  // const arrowStyle = {
-  //   transform: isRotated ? 'rotate(-180deg)' : 'rotate(0deg)',
-  //   transition: 'transform 0.5s ease',
-  //   transformOrigin: '50% 50%',
-  //   transformBox: 'fill-box',
-  // };
-
 
   return (
     <main className="min-w-full">
@@ -54,6 +36,8 @@ function Faqs() {
       <div id="faq-accordian" className="flex flex-col md:flex-row">
         <div className="container mx-auto px-6 mb-32">
           <p>Have a question you can ask right here!</p>
+
+          <FAQForm />
         </div>
 
         <div className="container mx-auto px-6">
