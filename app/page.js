@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import HomepageContactForm from "@/components/forms/HomepageContactForm";
+import SimpleForm from "@/components/forms/SimpleForm";
 import Carousel from "@/components/Carousel";
 import Slider from "@/components/Slider";
 import Map from "@/components/Map";
@@ -20,11 +20,13 @@ import commerical from "../public/images/svg_assets/residential-svgrepo-com.png"
 
 import { Car, CircleUserRound } from "lucide-react";
 
-import { getTestimonials, getSliderImages } from "@/lib/utils";
-import SimpleForm from "@/components/forms/SimpleForm";
+import { getTestimonials, getSliderImages, getProjects } from "@/lib/utils";
+
 
 export default function Home() {
   const testimonials = getTestimonials();
+  const sliderImages = getSliderImages();
+  const projects = getProjects();
 
   return (
     <main className="min-w-full">
@@ -51,14 +53,9 @@ export default function Home() {
 
           <div className="relative mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
             <div className="bg-hero"></div>
-            <Carousel>
-                <Image
-                  src={headerPic}
-                  alt="A stunning tiled space showcasing Yan's work"
-                  className="relative z-10 lg:top-24 xl:top-0 overflow-x-visible"
-                />
-            </Carousel>
-            
+            <div className="w-[500px] h-[280px] mx-auto">
+              <Carousel slides={sliderImages} /> 
+            </div>           
           </div>
         </div>
 
@@ -201,25 +198,8 @@ export default function Home() {
 
         <div className="lg:row-start-1 lg:row-end-3 lg:col-start-3 lg:col-end-5">
           <div className="w-full h-full flex flex-col lg:flex-row">
-            <div className="col-start-1 col-end-2 row-start-2 w-full">
-                <p>Portfolio goes here</p>
-                {/* <Carousel>
-                  {[
-                    projectPic1,
-                    projectPic2,
-                    projectPic4,
-                    projectPic5,
-                    projectPic6,
-                  ].map((image, index) => (
-                    <Image
-                      key={index}
-                      src={image}
-                      alt="A stunning tiled space showcasing Yan's work"
-                      // width={400}
-                      // height={400}
-                    />
-                  ))}
-                </Carousel> */}
+            <div className="col-start-1 col-end-2 row-start-2 w-full h-full">
+                <Slider slides={projects} />
             </div>
           </div>
         </div>
