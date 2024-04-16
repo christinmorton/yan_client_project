@@ -1,6 +1,28 @@
-import React from "react";
+'use client';
+
+import {useState} from "react";
+
+import { getFAQs } from "@/lib/utils";
 
 function Faqs() {
+  const faqs = getFAQs();
+
+  const [isRotated, setIsRotated] = useState(true);
+  const [expanded, setExpanded] = useState(false);
+
+  const toggleArrowRotation = () => {
+    setIsRotated(!isRotated);
+    setExpanded(!expanded);
+  };
+
+  const arrowStyle = {
+    transform: isRotated ? 'rotate(-180deg)' : 'rotate(0deg)',
+    transition: 'transform 0.5s ease',
+    transformOrigin: '50% 50%',
+    transformBox: 'fill-box',
+  };
+
+
   return (
     <main className="min-w-full">
       <div className="min-w-full min-h-screen grid grid-cols-4 bg-picton-blue-400">
@@ -28,128 +50,82 @@ function Faqs() {
         </div>
       </div>
 
-      {/* <div className="min-h-[250px] m-44 grid grid-cols-4 gap-6">
-        <div className="col-start-3 col-end-5">
-          
-        </div>
-      </div> */}
-      
-      <div className="flex flex-col items-center justify-around lg:grid lg:grid-cols-3 lg:grid-row-4 lg:gap-6 p-24">
-        <div className="p-12">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> How long has Yan been in the tile setting business?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            <span>A:</span> Yan has over two decades of experience in the construction
-            industry, specializing in tile setting for both residential and
-            commercial projects. His passion for craftsmanship and dedication to
-            excellence are evident in every project he undertakes.
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Sarah</h5>
+      <div id="faq-accordian" className="flex flex-col md:flex-row">
+        <div className="container mx-auto px-6 mb-32">
+          <p>Have a question you can ask right here!</p>
         </div>
 
-        <div className="p-12 bg-slate-300">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> What sets Yan apart from other tile setters?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            <span>A:</span> {`Yan's attention to detail, precision craftsmanship, and
-            personalized approach set him apart from the competition. With a
-            background in construction work and specialized training in tile
-            setting, Yan combines technical expertise with artistic flair to
-            deliver stunning results that exceed expectations.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Michael</h5>
-        </div>
+        <div className="container mx-auto px-6">
 
-        <div className="p-12">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> Does Yan provide consultations before starting a project?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            <span>A:</span> {`Absolutely! Yan offers free consultations to discuss your project
-            goals, preferences, and budget. During the consultation, he'll
-            assess your space, provide design recommendations, and answer any
-            questions you may have to ensure a seamless and successful project.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Emily</h5>
-        </div>
-
-        <div className="p-12 bg-slate-300">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> What types of tile projects does Yan specialize in?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            <span>A:</span> {`Yan specializes in a wide range of tile projects, including
-            kitchen backsplashes, bathroom renovations, flooring installations,
-            shower surrounds, and more. Whether you're looking for classic
-            elegance or modern sophistication, Yan has the expertise to bring
-            your vision to life.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Jason</h5>
-        </div>
-
-        <div className="p-12">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> Can Yan work with my specific design preferences?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {`Absolutely! Yan takes pride in collaborating closely with clients
-            to understand their unique design preferences and vision for their
-            space. Whether you have a specific pattern, color scheme, or style
-            in mind, Yan will work with you to create a customized design that
-            reflects your taste and personality.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Olivia</h5>
-        </div>
-
-        <div className="p-12 bg-slate-300">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> How long does a typical tile installation project take?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {`The duration of a tile installation project can vary depending on
-            factors such as the size of the space, the complexity of the design,
-            and the materials used. During your consultation, Yan will provide
-            an estimated timeline for your project based on its specific
-            requirements.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: David</h5>
-        </div>
-
-        <div className="p-12">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> Does Yan use environmentally friendly materials?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {`Yes, Yan is committed to sustainability and environmental
-            responsibility. He sources high-quality materials from reputable
-            suppliers that meet eco-friendly standards, ensuring that your tile
-            installation not only looks beautiful but also contributes to a
-            healthier planet.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Emma</h5>
-        </div>
-
-        <div className="p-12 bg-slate-300">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> {`What is Yan's approach to customer satisfaction?`}</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {`Customer satisfaction is Yan's top priority. From the initial
-            consultation to the final installation, Yan is dedicated to
-            delivering exceptional service, clear communication, and superior
-            craftsmanship. He strives to exceed your expectations and ensure
-            that you're delighted with the results.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: John</h5>
-        </div>
-
-        <div className="p-12">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> Can Yan provide references or examples of past projects?</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {` Certainly! Yan is proud to showcase his portfolio of past
-            projects, featuring a diverse range of tile installations that
-            highlight his expertise and creativity. Feel free to browse through
-            his gallery to gain inspiration for your own project.`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Ashley</h5>
-        </div>
-
-        <div className="p-12 bg-slate-300">
-          <h3 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0"><span>Q:</span> {`How do I get started with Yan's tile setting services?`}</h3>
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-           <span>A:</span> {`Getting started with Yan is easy! Simply contact us to schedule
-            your free consultation. During the consultation, Yan will discuss
-            your project goals, provide design recommendations, and offer a
-            personalized quote. Take the first step towards transforming your
-            space with expert tile setting today!`}
-          </p>
-          <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-md lg:text-left lg:mt-0 lg:mx-0">User Name: Alex</h5>
+        {faqs.map((faq, index) => {
+          if(index % 2 === 0) {
+            return (
+              <div key={index} className="p-12 space-y-12">
+                <div className="flex items-center justify-between py-3 text-gray-800 transition duration-500 ease cursor-pointer group">
+                  <div className="transition duration-500 ease group-hover:text-picton-blue-400" onClick={toggleArrowRotation}>
+                    <h3 className="max-w-md mx-auto text-sm text-center lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
+                      <span>Q:&nbsp;</span>{faq.question}
+                    </h3>
+                  </div>
+                  
+                  {/* Arrow */}
+                  <div className="relative" id="arrowContainer" onClick={toggleArrowRotation}>
+                    <button className="absolute inset-0 w-full h-full focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" style={arrowStyle}>
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          d="M1 1l8 8 8-8"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              
+              <div tabIndex={index} className={`${expanded ? 'hidden transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b border-picton-blue-400 outline-none space-y-4' : 'transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b border-picton-blue-400 outline-none space-y-4'} transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b border-picton-blue-400 outline-none space-y-4`}>
+                <p className="max-w-md mx-auto text-md text-center text-picton-blue-400 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
+                  <span>A:&nbsp;</span> {faq.answer}
+                </p>
+                <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-700 lg:text-lg lg:text-right lg:mt-0 lg:mx-0">{faq.userName}</h5>
+              </div>
+            </div>
+            )
+          } else {
+            return (
+              <div key={index} className="p-12 bg-picton-blue-400 space-y-12 rounded-lg">
+                <div className="flex items-center justify-between py-3 text-gray-800 transition duration-500 ease cursor-pointer group">
+                  <div className="transition duration-500 ease group-hover:text-picton-blue-400" onClick={toggleArrowRotation}>
+                    <h3 className="max-w-md mx-auto text-md text-center text-white lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
+                      <span>Q:&nbsp;</span>{faq.question}
+                    </h3>
+                  </div>
+                  
+                  {/* Arrow */}
+                  <div className="relative" id="arrowContainer" onClick={toggleArrowRotation}>
+                    <button className="absolute inset-0 w-full h-full focus:outline-none">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12" style={arrowStyle}>
+                        <path
+                          fill="none"
+                          stroke="currentColor"
+                          strokeWidth="3"
+                          d="M1 1l8 8 8-8"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+              
+              <div tabIndex={index} className={`${expanded ? 'hidden transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b outline-none space-y-4 group' : 'transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b border-picton-blue-400 outline-none space-y-4'} transition duration-500 group-focus:max-h-screen.max-h-0 ease py-1 border-b outline-none space-y-4 group`}>
+                <p className="max-w-md mx-auto text-md text-center text-picton-blue-200 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
+                  <span>A:&nbsp;</span> {faq.answer}
+                </p>
+                <h5 className="max-w-md mx-auto text-sm text-center text-picton-blue-50 lg:text-lg lg:text-right lg:mt-0 lg:mx-0">{faq.userName}</h5>
+              </div>
+            </div>
+            )
+          }
+        })}
         </div>
       </div>
     </main>
