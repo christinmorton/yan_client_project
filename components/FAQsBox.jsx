@@ -1,6 +1,6 @@
 // "use client";
 import { getFAQs } from "@/lib/utils";
-import FaqItem from "./FaqItem";  // Import FaqItem component
+import FaqItem from "./FAQItem";  // Import FaqItem component
 
 function FaqsBox() {
   const faqs = getFAQs();

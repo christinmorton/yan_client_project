@@ -3,17 +3,18 @@ import Image from "next/image";
 import SimpleForm from "@/components/forms/SimpleForm";
 import Carousel from "@/components/Carousel";
 import Slider from "@/components/Slider";
-import TestimonialSlider from "@/components/TestimonialSlider";
+// import TestimonialSlider from "@/components/TestimonialSlider";
 import Map from "@/components/Map";
+import HomepageContactForm from "@/components/forms/HomepageContactForm";
 
 import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
-import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
-import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
-import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
-import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-import projectPic6 from '../public/images/Resized_Resized_20240306_165443.JPEG'
-import headerPic from "../public/images/stock/pexels-luis-yanez-206172.jpg";
+// import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
+// import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
+// import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
+// import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
+// import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
+// import projectPic6 from '../public/images/Resized_Resized_20240306_165443.JPEG'
+// import headerPic from "../public/images/stock/pexels-luis-yanez-206172.jpg";
 import bathroom from "../public/images/svg_assets/bathroom-svgrepo-com.png";
 import kitchen from "../public/images/svg_assets/kitchen-room-svgrepo-com.png";
 import residential from "../public/images/svg_assets/house-svgrepo-com.png";
@@ -225,11 +226,66 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
-            <div className="w-[600px] h-[420px] mx-auto">
-              {/* <TestimonialSlider slides={testimonials} /> */}
+        <div className="flex flex-row lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div className="w-full h-[420px] mx-auto">
+              <div className="w-full flex flex-col items-center hover:scale-105 ease-in-out duration-500">
+                <div className="p-8 flex flex-col items-center justify-center self-center bg-picton-blue-300 rounded-md text-white">
+                  <Image
+                    src={`/images/profile_pics/${testimonials[0].image}`}
+                    alt={`A photo of ${testimonials[0].first_name} ${testimonials[0].last_name}, a satisfied customer!`}
+                    className="rounded-full"
+                    loading="lazy"
+                    width={100}
+                    height={100}
+                    unoptimized={true}
+                  />
+                  <h4 className="mt-4">
+                    {testimonials[0].first_name} {testimonials[0].last_name}
+                  </h4>
+                  <h4 className="mb-2">{testimonials[0].services_used}</h4>
+                  <p className="text-center">{testimonials[0].testimonial}</p>
+                </div>
+              </div>
             </div>
-            <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Testimonials go here</h1>
+
+            {/* <div className="w-[600px] h-[420px] mx-auto">
+              <div>
+                <Image
+                  src={`/images/profile_pics/${testimonials[4].image}`}
+                  alt={`A photo of ${testimonials[4].first_name} ${testimonials[4].last_name}, a satisfied customer!`}
+                  className="rounded-full"
+                  loading="lazy"
+                  width={100}
+                  height={100}
+                  unoptimized={true}
+                />
+                <h4 className="mt-4">
+                  {testimonials[4].first_name} {testimonials[4].last_name}
+                </h4>
+                <h4 className="mb-2">{testimonials[4].services_used}</h4>
+                <p>{testimonials[4].testimonial}</p>
+              </div>
+            </div>
+
+            <div className="w-[600px] h-[420px] mx-auto">
+              <div>
+                <Image
+                  src={`/images/profile_pics/${testimonials[8].image}`}
+                  alt={`A photo of ${testimonials[8].first_name} ${testimonials[8].last_name}, a satisfied customer!`}
+                  className="rounded-full"
+                  loading="lazy"
+                  width={100}
+                  height={100}
+                  unoptimized={true}
+                />
+                <h4 className="mt-4">
+                  {testimonials[8].first_name} {testimonials[8].last_name}
+                </h4>
+                <h4 className="mb-2">{testimonials[8].services_used}</h4>
+                <p>{testimonials[8].testimonial}</p>
+              </div>
+            </div> */}
+            {/* <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Testimonials go here</h1> */}
         </div>
 
         {/* <div className="gap-6"></div> */}
@@ -251,8 +307,8 @@ export default function Home() {
         </div>
 
         <div className=" w-full p-6 bg-picton-blue-400">
-          {/* <HomepageContactForm /> */}
-          <SimpleForm />
+          <HomepageContactForm />
+          {/* <SimpleForm /> */}
         </div>
 
         <div className="w-full flex flex-col items-center justify-between gap-x-8 pt-12 px-8 pb-12 bg-white lg:flex-row">
