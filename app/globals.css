@@ -12,8 +12,8 @@
  
 @media screen(lg) {
   .bg-hero {
-    width: 2000px;
-    height: 350px;
+    width: 100%;
+    height: 250px;
     left: 30%;
     @apply absolute rounded-l-full top-52 bg-picton-blue-dark-400;
   }

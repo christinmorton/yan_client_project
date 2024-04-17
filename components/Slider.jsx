@@ -43,7 +43,7 @@ const Slider = ({slides}) => {
             <BsChevronCompactRight size={36}/>
         </div>
 
-        <div style={{backgroundImage: `url(http://localhost:3000/images/${slides[currentSlide].image})`}} className='w-full h-full rounded-md bg-center bg-cover'></div>
+        <div style={{backgroundImage: `url(http://localhost:3000/images/${slides[currentSlide].image})`}} className='w-full min-h-[350px] lg:h-full rounded-md bg-center bg-cover'></div>
 
         <div className="flex items-center justify-center mx-auto">
             {slides.map((slide, index) => (

@@ -3,6 +3,7 @@ import Image from "next/image";
 import SimpleForm from "@/components/forms/SimpleForm";
 import Carousel from "@/components/Carousel";
 import Slider from "@/components/Slider";
+import TestimonialSlider from "@/components/TestimonialSlider";
 import Map from "@/components/Map";
 
 import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
@@ -30,7 +31,7 @@ export default function Home() {
 
   return (
     <main className="min-w-full">
-      <section id="hero">
+      <section id="hero" className="p-2 lg:p-16">
         <div className="container flex flex-col-reverse gap-x-6 mx-auto p-6 lg:flex-row lg:mb-0">
           {/* Content */}
           <div className="flex flex-col space-y-10 mt-12 lg:mt-16 lg:w-1/2">
@@ -62,7 +63,7 @@ export default function Home() {
         {/* <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div> */}
       </section>
 
-      <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row  p-16">
+      <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row p-8 lg:p-16">
         <div className="w-1/2 flex m-8 items-center justify-end ">
           <Image
             className=""
@@ -177,7 +178,7 @@ export default function Home() {
 
       </section>
 
-      <section className="min-h-[250px] flex flex-col lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-y-12 p-44 bg-picton-blue-400 ">
+      <section className="min-h-[500px] flex flex-col gap-4 lg:min-h-[250px] lg:grid lg:grid-cols-4 lg:grid-rows-2 lg:gap-12 p-24 lg:p-44 bg-picton-blue-400 ">
         <div className="lg:row-start-1 lg:row-end-1 lg:col-start-1 lg:col-end-3 lg:place-content-end">
             <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
               Portfolio
@@ -186,7 +187,7 @@ export default function Home() {
 
         <div className="lg:row-start-2 lg:col-start-1 lg:col-end-3">
           <h2 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-picton-blue-200">Explore Our Portfolio </h2>
-          <p className="max-w-md mx-auto text-sm text-center mb-4 text-white lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
+          <p className="max-w-md mx-auto text-sm text-center mb-4 text-white lg:text-md lg:text-left lg:mt-0 lg:mx-0">
             Take a virtual tour of some of our recent tile setting projects
             and gain inspiration for your own space. From classic designs to
             contemporary concepts, our portfolio showcases the versatility and
@@ -224,8 +225,10 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="relative flex flex-col lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
-            <div className="bg-hero"></div>
+        <div className="flex flex-col lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+            <div className="w-[600px] h-[420px] mx-auto">
+              {/* <TestimonialSlider slides={testimonials} /> */}
+            </div>
             <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Testimonials go here</h1>
         </div>
 

@@ -4,7 +4,7 @@ import FooterNavigation from "./navigation/FooterNavigation";
 
 import { Linkedin, Facebook, Twitter } from 'lucide-react';
 
-import logoTextMark from '../public/images/yans_logo/Yans_Tiles_Logo_word_mark_black.png';
+import logoTextMark from '../public/images/yans_logo/Yans_Logo_3.svg';
 
 import React from 'react'
 
@@ -12,7 +12,7 @@ import React from 'react'
 function Footer() {
   return (
     <footer className="min-h-[250px] bg-picton-blue-500">
-        <div className="px-44 py-12 mx-auto0">
+        <div className="px-24 py-6 lg:px-44 lg:py-12 mx-auto0">
           <div className="flex flex-col items-center mb-8 space-y-6 lg:flex-row lg:space-y-0 lg:justify-between lg:items-start">
             {/* Menu and logo container */}
             <div className="flex flex-col items-center space-y-8 md:items-start md:space-y-4">
