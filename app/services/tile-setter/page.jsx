@@ -15,30 +15,29 @@ function TileSetter() {
   return (
     <main className="min-w-full">
       <section className="min-w-full min-h-screen">
-        <div className="min-h-[500px] flex flex-col items-center justify-evenly pt-28">
-          <h1 className="text-2xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
-            Elevate Your Space with Expert Craftsmanship
+        <div className="min-h-[500px] flex flex-col items-center justify-evenly space-y-12 ">
+          <h1 className="text-3xl font-semi-bold text-center lg:text-6xl text-picton-blue-500">
+            Elevate Your Space with <br /> Expert Craftsmanship
           </h1>
 
           <h4 className="max-w-md mx-auto text-sm text-center text-gray-400 lg:text-md lg:text-left lg:mt-0 lg:mx-0">
-            Experience the Difference of Expert
+            Experience the Difference
           </h4>
 
-          <p className="max-w-md mx-auto text-lg text-center text-picton-blue-400 lg:text-xl lg:text-left lg:mt-0 lg:mx-0">
-            Transform Your Vision into Reality with Yan&apos;s Tile Craftsmanship and Impeccable Attention to Detail.
+          <p className="max-w-md mx-auto text-sm text-center text-picton-blue-400 md:text-md lg:text-lg lg:mt-0 lg:mx-0">
+            Transform Your Vision into Reality with Yan&apos;s skilled Tile Craftsmanship and Impeccable Attention to Detail.
           </p>
           <button className="bg-picton-blue-400 text-white px-4 py-4 rounded shadow-md border border-picton-blue-500 md:text-base hover:bg-white hover:text-picton-blue-300">Request a Free Consultation</button>
         </div>
       </section>
       
 
-      <section className="min-h-[250px] bg-picton-blue-400 px-16 pt-12">
-        <div className="">
+      <section className="min-h-[250px] bg-picton-blue-400 p-16">
         <h2 className="text-3xl font-semi-bold text-center lg:text-6xl text-picton-blue-100">
            Why not choose professional tile setting?
         </h2>
         <div className="h-1/2 flex flex-col items-center justify-center p-6 space-y-4 lg:flex-row lg:h-[500px] lg:space-x-6">
-          <p className="max-w-md mx-auto text-sm text-center mb-4 text-white lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
+          <p className="max-w-md mx-auto text-sm text-center mb-4 text-white md:text-md  lg:text-lg lg:text-left lg:mt-0 lg:mx-0">
             <span className="text-md font-extrabold">Proper tile setting</span> is essential for achieving durable, long-lasting
             results that enhance the beauty and functionality of your space.
           </p>
@@ -53,10 +52,9 @@ function TileSetter() {
             expectations.
           </p>
         </div>
-        </div>
       </section>
 
-      <section className="min-w-full min-h-screen  bg-slate-200 p-16">
+      {/* <section className="min-w-full min-h-screen  bg-slate-200 p-16">
         <div className="px-12">
         <h2 className="text-2xl font-semi-bold text-center lg:text-5xl lg:text-left text-picton-blue-500">
           Yan&apos;s Process: From Concept to Completion Heading: 
@@ -79,9 +77,9 @@ function TileSetter() {
         <div className="px-12">
         <h2 className="text-xl font-semi-bold text-center lg:text-3xl lg:text-right text-picton-blue-500">The Yan Difference: A Proven Process for Success</h2>
         </div>
-      </section>
+      </section> */}
 
-      <section className="min-h-[250px] bg-picton-blue-400">
+      {/* <section className="min-h-[250px] bg-picton-blue-400">
         <div className="">
         <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
           Experience the Yan Advantage
@@ -109,9 +107,9 @@ function TileSetter() {
           seamless and stress-free experience for every client.
         </p>
         </div>
-      </section>
+      </section> */}
 
-      <section className="min-w-full min-h-screen bg-white">
+      {/* <section className="min-w-full min-h-screen bg-white">
       <div className="">
       <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
         Explore Our Portfolio of Beautiful Tile Installations
@@ -131,9 +129,9 @@ function TileSetter() {
         </p>
         </div>
         
-      </section>
+      </section> */}
 
-      <section className="min-h-[250px] bg-picton-blue-300">
+      {/* <section className="min-h-[250px] bg-picton-blue-300">
         <div className="">
         <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Get Started Today</h2>
         </div>
@@ -150,7 +148,7 @@ function TileSetter() {
           and attention to detail.
         </p>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

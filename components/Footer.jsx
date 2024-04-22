@@ -29,7 +29,7 @@ function Footer() {
             {/* social and copy container */}
             <div className="min-h-[168px] flex flex-col items-start justify-between space-y-4 pt-12 lg:pt-0 text-gray-500">
               <div className="self-center flex items-center justify-center space-x-4 lg:self-start lg:mx-0">
-                <Link href="#">
+             {/*    <Link href="#">
                   <span className="text-2xl text-white">
                     <Linkedin className="h-6" />
                   </span>
@@ -43,10 +43,10 @@ function Footer() {
                   <span className="text-2xl text-white">
                     <Twitter className="h-6" />
                   </span>
-                </Link>
-              </div>
+                </Link>*/}
+              </div> 
 
-              <div className="min-h-[16px] flex flex-col items-center justify-between font-bold lg:justify-normal">
+              <div className="min-h-[16px] flex flex-col items-center justify-between font-bold  lg:place-content-end">
                 <p className=" text-white text-center  mt-12 lg:mt-auto ">Copyright &copy; <Link href="#" className="font-serif font-semibold">Yan&apos;s Tiles</Link>, 2024, All rights reserved</p>
 
                 <Link href="#" className="mt-12 lg:mt-0">

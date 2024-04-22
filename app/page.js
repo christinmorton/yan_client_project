@@ -23,6 +23,7 @@ import commerical from "../public/images/svg_assets/residential-svgrepo-com.png"
 import { Car, CircleUserRound } from "lucide-react";
 
 import { getTestimonials, getSliderImages, getProjects } from "@/lib/utils";
+import Link from "next/link";
 
 
 export default function Home() {
@@ -228,10 +229,14 @@ export default function Home() {
               customer satisfaction shines through in every testimonial. 
             </p>
             <p className="max-w-md text-xs font-semi-bold text-center mb-8 lg:text-xl md:text-left text-gray-500"><br />Read firsthand accounts of our exceptional service and craftsmanship and join the ranks of our delighted customers.</p>
+            
+            
+            {/* <Link href="/testimonials" className="max-w-md mb-4 text-sm text-center mx-auto text-picton-blue-500 lg:text-md md:text-left lg:mt-0 lg:mx-0"><div className="p-4 inline-block text-center border border-picton-blue-500 rounded-lg">See more here...</div></Link> */}
+              
           </div>
         </div>
 
-        <div className="flex flex-row lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
+        <div className="flex flex-col min-h-[500px] md:flex-row lg:row-start-2 lg:row-end-3 lg:col-start-2 lg:col-end-5 mx-auto lg:mx-0 lg:mb-0 lg:w-1/2">
             <div className="w-full h-[420px] mx-auto">
               <div className="w-full flex flex-col items-center hover:scale-105 ease-in-out duration-500">
                 <div className="p-4 lg:p-8 flex flex-col items-center justify-center self-center bg-picton-blue-300 rounded-md text-white">
@@ -255,47 +260,54 @@ export default function Home() {
               </div>
             </div>
 
-            {/* <div className="w-[600px] h-[420px] mx-auto">
-              <div>
-                <Image
-                  src={`/images/profile_pics/${testimonials[4].image}`}
-                  alt={`A photo of ${testimonials[4].first_name} ${testimonials[4].last_name}, a satisfied customer!`}
-                  className="rounded-full"
-                  loading="lazy"
-                  width={100}
-                  height={100}
-                  unoptimized={true}
-                />
-                <h4 className="mt-4">
-                  {testimonials[4].first_name} {testimonials[4].last_name}
-                </h4>
-                <h4 className="mb-2">{testimonials[4].services_used}</h4>
-                <p>{testimonials[4].testimonial}</p>
+            <div className="w-full h-[420px] mx-auto">
+              <div className="w-full flex flex-col items-center hover:scale-105 ease-in-out duration-500">
+                <div className="p-4 lg:p-8 flex flex-col items-center justify-center self-center bg-picton-blue-300 rounded-md text-white">
+                  <Image
+                    src={`/images/profile_pics/${testimonials[1].image}`}
+                    alt={`A photo of ${testimonials[1].first_name} ${testimonials[1].last_name}, a satisfied customer!`}
+                    className="rounded-full"
+                    loading="lazy"
+                    width={100}
+                    height={100}
+                    unoptimized={true}
+                  />
+                  <div className="space-y-1">
+                  <h4 className="text-center">
+                    {testimonials[1].first_name} {testimonials[1].last_name}
+                  </h4>
+                  <h4 className="text-center">{testimonials[1].services_used}</h4>
+                  <p className="min-w-sm text-center">{getFirstSentence(testimonials[1].testimonial)}</p>
+                  </div>
+                </div>
               </div>
             </div>
 
-            <div className="w-[600px] h-[420px] mx-auto">
-              <div>
-                <Image
-                  src={`/images/profile_pics/${testimonials[8].image}`}
-                  alt={`A photo of ${testimonials[8].first_name} ${testimonials[8].last_name}, a satisfied customer!`}
-                  className="rounded-full"
-                  loading="lazy"
-                  width={100}
-                  height={100}
-                  unoptimized={true}
-                />
-                <h4 className="mt-4">
-                  {testimonials[8].first_name} {testimonials[8].last_name}
-                </h4>
-                <h4 className="mb-2">{testimonials[8].services_used}</h4>
-                <p>{testimonials[8].testimonial}</p>
+            <div className="w-full h-[420px] mx-auto">
+              <div className="w-full flex flex-col items-center hover:scale-105 ease-in-out duration-500">
+                <div className="p-4 lg:p-8 flex flex-col items-center justify-center self-center bg-picton-blue-300 rounded-md text-white">
+                  <Image
+                    src={`/images/profile_pics/${testimonials[2].image}`}
+                    alt={`A photo of ${testimonials[2].first_name} ${testimonials[2].last_name}, a satisfied customer!`}
+                    className="rounded-full"
+                    loading="lazy"
+                    width={100}
+                    height={100}
+                    unoptimized={true}
+                  />
+                  <div className="space-y-1">
+                  <h4 className="text-center">
+                    {testimonials[2].first_name} {testimonials[2].last_name}
+                  </h4>
+                  <h4 className="text-center">{testimonials[2].services_used}</h4>
+                  <p className="min-w-sm text-center">{getFirstSentence(testimonials[2].testimonial)}</p>
+                  </div>
+                </div>
               </div>
-            </div> */}
-            {/* <h1 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">Testimonials go here</h1> */}
-        </div>
+            </div>
 
-        {/* <div className="gap-6"></div> */}
+            
+        </div>
       </section>
 
       <section className="min-h-[250px] px-8 pt-8 md:px-24 md:pt-24 lg:px-44 lg:pt-44 bg-picton-blue-300">
