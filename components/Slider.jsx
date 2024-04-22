@@ -34,12 +34,12 @@ const Slider = ({slides}) => {
   return (
     <div className='relative h-full'>
         {/* Left Arrow */}
-        <div onClick={prevSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 left-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
+        <div onClick={prevSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 left-[16px] md:left-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
             <BsChevronCompactLeft size={36} className=''/>
         </div>
         
         {/* Right Arrow */}
-        <div onClick={nextSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 right-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
+        <div onClick={nextSlide} className=' z-10 absolute top-1/2 -translate-y-1/2 right-[16px] md:right-[32px] font-bold text-white bg-gray-200 bg-opacity-40 rounded-full p-2'>
             <BsChevronCompactRight size={36}/>
         </div>
 
