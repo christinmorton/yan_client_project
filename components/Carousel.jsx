@@ -41,7 +41,7 @@ const Carousel = ({slides}) => {
             <BsChevronCompactRight size={36}/>
         </div>
 
-        <div style={{backgroundImage: `url(http://localhost:3000/images/stock/${slides[currentSlide]})`}} className='w-full h-full rounded-md bg-center bg-cover'></div>
+        <div style={{backgroundImage: `url(../../images/stock/${slides[currentSlide]})`}} className='w-full h-full rounded-md bg-center bg-cover'></div>
 
         <div className="flex items-center justify-center mx-auto">
             {slides.map((slide, index) => (

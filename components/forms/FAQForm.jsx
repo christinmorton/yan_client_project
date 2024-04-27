@@ -34,7 +34,7 @@ const FAQForm = () => {
         const formData = {username, email, question}
     
         try {
-          const res = await fetch('http://localhost:3000/api/faqs', { 
+          const res = await fetch('https://yan-client-project-uycp-git-ec556e-chrisbiz41gmailcoms-projects.vercel.app//api/faqs', { 
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(formData)

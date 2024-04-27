@@ -37,7 +37,7 @@ function SimpleForm() {
     const formData = {name, email, subject, message, priority}
 
     try {
-      const res = await fetch('http://localhost:3000/api/messages', { 
+      const res = await fetch('https://yan-client-project-uycp-git-ec556e-chrisbiz41gmailcoms-projects.vercel.app/api/messages', { 
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
