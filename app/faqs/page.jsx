@@ -1,4 +1,3 @@
-// 'use client';
 
 import FaqsBox from "@/components/FAQsBox";
 import FAQForm from "@/components/forms/FAQForm";
@@ -11,8 +10,6 @@ function Faqs() {
       <div className="min-w-full min-h-screen flex flex-col items-center justify-around space-y-8 bg-picton-blue-400 p-16">
         <div className=" space-y-6">
           <h2 className=" max-w-lg text-lg font-semi-bold text-center md:text-xl lg:text-4xl text-picton-blue-100">FAQ: Your Guide to Expert Tile Setting Services</h2>
-
-          {/* <h3 className="text-lg font-semi-bold text-center lg:text-4xl lg:text-left text-picton-blue-100">Welcome to Yan&apos;s FAQ Page</h3> */}
 
           <h4 className="max-w-md text-sm font-semi-bold text-center  mb-2 md:text-md lg:text-lg text-picton-blue-200">
             Your Comprehensive Resource for Answers to Common Questions About

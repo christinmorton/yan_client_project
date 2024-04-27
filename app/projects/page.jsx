@@ -2,10 +2,8 @@ import Image from "next/image";
 
 import projectPic1 from "../../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
 import projectPic2 from "../../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-import projectPic3 from "../../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
-import projectPic4 from "../../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
 import projectPic5 from "../../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-import projectPic6 from '../../public/images/Resized_Resized_20240306_165443.JPEG'
+// import projectPic6 from '../../public/images/Resized_Resized_20240306_165443.JPEG'
 
 function Projects() {
   return (
@@ -43,7 +41,6 @@ function Projects() {
           />
         </div>
         <div className="w-1/2 flex flex-col justify-between gap-4 text-left m-8 border-t-2 border-picton-blue-50">
-          {/* <h2 className="">About Yan</h2> */}
           <h3 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
             Project 1: 
           </h3>

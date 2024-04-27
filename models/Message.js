@@ -8,9 +8,11 @@ const MessageSchema = new Schema({
     email: {
         type: String,
         required: [true, 'Email is required'],
-        unique: [true, 'Email already exists']
     },
     subject: {
+        type: String,
+    },
+    priority: {
         type: String,
     },
     message: {
@@ -21,6 +23,6 @@ const MessageSchema = new Schema({
     timestamps: true
 });
 
-const Message = models.message || model('Message', MessageSchema);
+const Message = models.Message || model('Message', MessageSchema);
 
 export default Message;

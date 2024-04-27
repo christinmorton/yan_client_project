@@ -3,27 +3,17 @@ import Image from "next/image";
 import SimpleForm from "@/components/forms/SimpleForm";
 import Carousel from "@/components/Carousel";
 import Slider from "@/components/Slider";
-// import TestimonialSlider from "@/components/TestimonialSlider";
 import Map from "@/components/Map";
-import HomepageContactForm from "@/components/forms/HomepageContactForm";
 
-import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.JPEG";
-// import projectPic1 from "../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
-// import projectPic2 from "../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-// import projectPic3 from "../public/images/stock/charlesdeluvio-zy0s5QJZTYo-unsplash.jpg";
-// import projectPic4 from "../public/images/stock/pexels-jean-van-der-meulen-1457847.jpg";
-// import projectPic5 from "../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-// import projectPic6 from '../public/images/Resized_Resized_20240306_165443.JPEG'
-// import headerPic from "../public/images/stock/pexels-luis-yanez-206172.jpg";
+
+import yanProfilePic from "../public/images/Resized_Resized_20220817_124533_223826879431907.jpg";
 import bathroom from "../public/images/svg_assets/bathroom-svgrepo-com.png";
 import kitchen from "../public/images/svg_assets/kitchen-room-svgrepo-com.png";
 import residential from "../public/images/svg_assets/house-svgrepo-com.png";
 import commerical from "../public/images/svg_assets/residential-svgrepo-com.png";
 
-import { Car, CircleUserRound } from "lucide-react";
-
 import { getTestimonials, getSliderImages, getProjects } from "@/lib/utils";
-import Link from "next/link";
+
 
 
 export default function Home() {
@@ -67,8 +57,6 @@ export default function Home() {
             </div>           
           </div>
         </div>
-
-        {/* <div className="col-start-2 col-end-4 justify-baseline my-auto min-h-48 text-white"></div> */}
       </section>
 
       <section className="min-h-[250px] flex flex-col-reverse items-center justify-center bg-picton-blue-400 lg:flex-row p-8 lg:p-16">
@@ -82,7 +70,6 @@ export default function Home() {
           />
         </div>
         <div className="w-1/2 flex flex-col justify-between gap-4 text-left m-8">
-          {/* <h2 className="">About Yan</h2> */}
           <h3 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-100">
             Meet Yan:
           </h3>
@@ -228,11 +215,7 @@ export default function Home() {
               prompt communication to flawless execution, our dedication to
               customer satisfaction shines through in every testimonial. 
             </p>
-            <p className="max-w-md text-xs font-semi-bold text-center mb-8 lg:text-xl md:text-left text-gray-500"><br />Read firsthand accounts of our exceptional service and craftsmanship and join the ranks of our delighted customers.</p>
-            
-            
-            {/* <Link href="/testimonials" className="max-w-md mb-4 text-sm text-center mx-auto text-picton-blue-500 lg:text-md md:text-left lg:mt-0 lg:mx-0"><div className="p-4 inline-block text-center border border-picton-blue-500 rounded-lg">See more here...</div></Link> */}
-              
+            <p className="max-w-md text-xs font-semi-bold text-center mb-8 lg:text-xl md:text-left text-gray-500"><br />Read firsthand accounts of our exceptional service and craftsmanship and join the ranks of our delighted customers.</p>         
           </div>
         </div>
 
@@ -315,7 +298,6 @@ export default function Home() {
           <h2 className="text-3xl font-semi-bold text-center lg:text-6xl lg:text-left text-picton-blue-500">
             Contact Us
           </h2>
-          {/* <h3 className="text-lg font-semi-bold text-center  mb-2 lg:text-xl lg:text-left text-gray-600">Get in Touch </h3> */}
           <p className="max-w-md mb-4 text-sm text-center text-picton-blue-500 lg:text-md md:text-left lg:mt-0 lg:mx-0">
             Ready to transform your space with expert tile setting? Reach out to
             Yan today to discuss your project requirements and schedule a
@@ -330,8 +312,7 @@ export default function Home() {
         </div>
 
         <div className=" w-full p-6 bg-picton-blue-400">
-          <HomepageContactForm />
-          {/* <SimpleForm /> */}
+          <SimpleForm />
         </div>
 
         <div className="w-full flex flex-col items-center justify-between gap-x-8 pt-12 px-8 pb-12 bg-white lg:flex-row">
