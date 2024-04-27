@@ -1,9 +1,9 @@
 import Image from "next/image";
 
-import projectPic1 from "../../public/images/Resized_Resized_20231109_125211_223389226286137.JPEG";
-import projectPic2 from "../../public/images/Resized_Resized_20230815_102145_223622606178443.JPEG";
-import projectPic5 from "../../public/images/Resized_Resized_20231204_161849_223463781147931.JPEG";
-// import projectPic6 from '../../public/images/Resized_Resized_20240306_165443.JPEG'
+import projectPic1 from "../../public/images/Resized_Resized_20231109_125211_223389226286137.jpg";
+import projectPic2 from "../../public/images/Resized_Resized_20230815_102145_223622606178443.jpg";
+import projectPic5 from "../../public/images/Resized_Resized_20231204_161849_223463781147931.jpg";
+// import projectPic6 from '../../public/images/Resized_Resized_20240306_165443.jpg'
 
 function Projects() {
   return (
